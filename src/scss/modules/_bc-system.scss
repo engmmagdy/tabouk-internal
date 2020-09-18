@@ -1,0 +1,108 @@
+﻿.bc-system__intro{
+    font-size: rem(16);
+    color: #404040;
+}
+.bc-system__info{
+    margin-top: 25px;
+}
+.bc-system__info-block{
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    padding: 4px 14px 7px;
+    font-size: 12px;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    @include breakpoint(isMobile){
+        font-size: 8px;
+        font-weight: 200;
+       }
+    span {
+        display: flex;
+    }
+    label{
+        margin-bottom: 0;
+        margin-#{$start}: 5px;
+    }
+    + .bc-system__info-block{
+        margin-#{$start}: 20px;
+        @include breakpoint(isMobile){
+            margin-#{$start}: 0px;
+      }
+    }
+    > svg{
+        width: 18px;
+        height: 18px;
+        fill: #404040;
+        margin-#{$end}: 10px;
+    }
+}
+.bc-system__info-space{
+    margin-#{$start}: 15px;
+}
+.bc-system__download{
+    font-size: 12px;
+}
+.bc-system__title{
+    font-size: rem(24);
+    color: $color-secondary;
+    margin-bottom: 1.3em;
+}
+.bc-system__panel{
+    &.is-fixed{
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+}
+.bc-system__panel-header{
+    color: #fff;
+    font-size: 14px;
+    background-color: $color-secondary;
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+}
+.bc-system__panel-body{
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #dbdbdb;
+    border-top: 0;
+    padding: 20px 12px;
+    background-color: #fff;
+}
+.bc-system__search-results{
+    margin-top: 10px;
+    color: #404040;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bc-system__content{
+    border: 1px solid #DBDBDB;
+    padding: 14px 10px;
+}
+.bc-system__accordion-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-primary;
+    margin-bottom: 0.8em;
+}
+.bc-system__search-controls{
+    display: flex;
+    button{
+        width: 20px;
+        background: transparent;
+        padding: 0;
+        min-width: 10px;
+        margin: 0;
+        + button{
+            border-#{$start}: 0;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+}
+.bc-system__current-mark{
+    background: #b5fff8;
+}

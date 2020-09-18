@@ -1,0 +1,64 @@
+﻿@font-face {
+    font-family: 'SSTArabic';
+    src: url('#{$font-path}/SSTArabic-Bold/SSTArabic-Bold.eot');
+    src: local('?'), 
+        url('#{$font-path}/SSTArabic-Bold/SSTArabic-Bold.woff') format('woff'), 
+        url('#{$font-path}/SSTArabic-Bold/SSTArabic-Bold.ttf') format('truetype'), 
+        url('#{$font-path}/SSTArabic-Bold/SSTArabic-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SSTArabic';
+    src: url('#{$font-path}/SSTArabic-Medium/SSTArabic-Medium.eot');
+    src: local('?'), 
+        url('#{$font-path}/SSTArabic-Medium/SSTArabic-Medium.woff') format('woff'), 
+        url('#{$font-path}/SSTArabic-Medium/SSTArabic-Medium.ttf') format('truetype'), 
+        url('#{$font-path}/SSTArabic-Medium/SSTArabic-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SSTArabic';
+    src: url('#{$font-path}/SSTArabic-Roman/SSTArabic-Roman.eot');
+    src: local('?'), 
+        url('#{$font-path}/SSTArabic-Roman/SSTArabic-Roman.woff') format('woff'), 
+        url('#{$font-path}/SSTArabic-Roman/SSTArabic-Roman.ttf') format('truetype'), 
+        url('#{$font-path}/SSTArabic-Roman/SSTArabic-Roman.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SSTArabic';
+    src: url('#{$font-path}/SSTArabic-Light/SSTArabic-Light.eot');
+    src: local('?'), 
+        url('#{$font-path}/SSTArabic-Light/SSTArabic-Light.woff') format('woff'), 
+        url('#{$font-path}/SSTArabic-Light/SSTArabic-Light.ttf') format('truetype'), 
+        url('#{$font-path}/SSTArabic-Light/SSTArabic-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'DroidKufi';
+    src: url('#{$font-path}/DroidKufi/DroidKufi-Bold.eot');
+    src: local('?'), 
+        url('#{$font-path}/DroidKufi/DroidKufi-Bold.woff') format('woff'), 
+        url('#{$font-path}/DroidKufi/DroidKufi-Bold.ttf') format('truetype'), 
+        url('#{$font-path}/DroidKufi/DroidKufi-Bold.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidKufi';
+    src: url('#{$font-path}/DroidKufi/DroidKufi-Regular.eot');
+    src: local('?'), 
+        url('#{$font-path}/DroidKufi/DroidKufi-Regular.woff') format('woff'), 
+        url('#{$font-path}/DroidKufi/DroidKufi-Regular.ttf') format('truetype'), 
+        url('#{$font-path}/DroidKufi/DroidKufi-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+

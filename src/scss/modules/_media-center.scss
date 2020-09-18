@@ -1,0 +1,296 @@
+.media-center {
+    width: 100%;
+    section {
+        margin: 0 0 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .button--primary {
+            span {
+                padding-#{$end}: 15px;
+            }
+            &:hover {
+                background: #000;
+            }
+        }
+    }
+    #eventList {
+        .swiper-slide {
+            transform: translate(13rem);
+            -webkit-transform: translate(13rem);
+            -moz-transform: translate(13rem);
+            -ms-transform: translate(13rem);
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            @include breakpoint(isCommon) {
+                transform: translate(0);
+                -webkit-transform: translate(0);
+                -moz-transform: translate(0);
+                -ms-transform: translate(0);
+            }
+            >a,
+            a:visited {
+                color: #000;                
+                &:hover {                   
+                    .card--title {
+                        color: $color-primary !important;
+                    }
+                    .card--image{
+                        &:after{
+                            background: rgba(0,0,0,0.01);
+                        }
+                    }
+                }
+            }
+            .card--image{
+                position: relative;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    #{$end}: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.5);
+                    @include transition();
+                }
+            }
+            .card--center {
+                overflow: inherit;
+                .card--image {
+                    overflow: hidden;
+                    margin-#{$end}: 30px;
+                    @include breakpoint(isCommon) {
+                        margin-#{$end}: 0;
+                    }
+                    img {
+                        width: 100%;
+                        height: 64vh;
+                    }
+                    figure {
+                        box-shadow: 0px 4px 11px 0px #e2e2e2;
+                        figcaption {
+                            position: absolute;
+                            bottom: 40px;
+                            padding: 0 30px;
+                            width: 100%;
+                            @include breakpoint(isMobile) {
+                                z-index: 9;
+                            }
+                            .card--title {
+                                font-size: 1.2rem;
+                                font-weight: 700;
+                                width: 90%;
+                                min-height: 60px;
+                                color: #fff;
+                                transition: color .3s ease-in-out;
+                                @include breakpoint(isMobile) {
+                                    font-size: 1.66rem;
+                                }
+                            }
+                            .card--location {
+                                font-size: 1rem;
+                                color: #f7f7f7;
+                            }
+                        }
+                    }
+                }
+                .card-content {
+                    background-color: rgba(255, 255, 255, 0.9);
+                    position: absolute;
+                    top: 5%;
+                    min-height: 220px;
+                    #{$start}: 5%;
+                    box-shadow: 8px 0px 17px -5px #eaeaea;
+                    width: 80%;
+                    padding: 30px;
+                    text-align: $start;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.2s ease-in-out;
+                    -webkit-transition: all 0.2s ease-in-out;
+                    -moz-transition: all 0.2s ease-in-out;
+                    -ms-transition: all 0.2s ease-in-out;
+
+                    @include breakpoint(isMobile){
+                        padding: 30px 25px 0;
+                    }
+
+                    .event--date {
+                        font-size: 27px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                        span {
+                            &:after {
+                                content: "";
+                                background: $color-primary;
+                                height: 8px;
+                                width: 18%;
+                                display: block;
+                                border-radius: 7px;
+                                margin-top: 5px;
+                                margin-#{$start}: -10px;
+                            }
+                        }
+                    }
+                    .card--brief {
+                        font-size: 13px !important;
+                        color: #000 !important;
+                        margin-top: 20px;
+                        * {
+                            font-size: 13px !important;
+                            color: #000 !important;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+            &:first-child {
+                .card-content {
+                    #{$start}: -80px;
+                    @include breakpoint(isCommon) {
+                        #{$start}: 33px !important;
+                    }
+                }
+            }
+        }
+        .swiper-slide-active {
+            >a {
+                &:before {
+                    opacity: 0;
+                    overflow: hidden;
+                }
+            }
+            .card--center {
+                .card-content {
+                    opacity: 1;
+                    visibility: visible;
+                    // #{$start}: 33px;
+                }
+            }
+        }
+    }
+    .swiper-grap-nav {
+        svg {
+            fill: rgba(0, 0, 0, 0.5) !important;
+        }
+        .swiper-grap-nav__cursor {
+            border-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    .l-eventList__bottom {
+        float: $start;
+        margin-top: 20px;
+        @include breakpoint(isCommon) {
+            width: 100%;
+            float: none;
+            justify-content: center;
+            margin-#{$start}: 0;
+        }
+    }
+    .media-gallery {
+        .media-gallery__row--0{
+            margin: 0;
+        }
+        .images-gallery {
+            background: url(../images/bg-section1.jpg) 0 0 no-repeat;
+            background-size: cover;
+            min-height: 500px;
+            position: relative;
+            a {
+                position: absolute;
+                bottom: 60px;
+                padding-#{$start}: 40px;
+                &:hover {
+                    text-decoration: none;
+                    svg.quick-links__icon {
+                        fill: $color-primary;
+                    }
+                }
+                svg.quick-links__icon {
+                    display: block;
+                    fill: #fff;
+                }
+                .main-title {
+                    font-size: 2.5rem;
+                    color: #fff;
+                    font-weight: 700;
+                }
+                .summary {
+                    color: #fff;
+                    width: 90%;
+                }
+            }
+        }
+        .videos-gallery,
+        .document-library,
+        .aseer-ads,
+        .aseer-press {
+            text-align: center;
+            background: url(../images/bg-section2.jpg) 0 0 no-repeat;
+            background-size: cover !important;
+            min-height: 250px;
+            position: relative;
+            padding-top: 37px;
+            @include breakpoint(isCommon){
+                margin-top: 30px;
+            }
+            &:hover {
+                svg.quick-links__icon {
+                    fill: $color-primary;
+                }
+            }
+            svg.quick-links__icon {
+                margin: 0 auto 20px;
+            }
+            .main-title {
+                font-size: 1.6rem;
+                color: #fff;
+                margin-bottom: 10px;
+                font-weight: normal;
+                &::after {
+                    display: none !important;
+                }
+            }
+            .summary {
+                color: #fff;
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+        .document-library {
+            background: url(../images/bg-section3.jpg) 0 0 no-repeat;
+        }
+        .aseer-ads {
+            background: url(../images/bg-section4.jpg) 0 0 no-repeat;
+        }
+        .aseer-press {
+            background: url(../images/bg-section5.jpg) 0 0 no-repeat;
+        }
+        svg.quick-links__icon {
+            display: block;
+            fill: #fff;
+        }
+        div[class^=col] {
+            @include breakpoint(large){
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+}
+.tabs-map{
+    background: url('#{$img-path}/menu-cover2.jpg') no-repeat;
+    background-size: cover; 
+    padding: 70px 0;
+}
+#qrcodeOutput{
+    @include breakpoint(isCommon){
+        display: none;
+    }
+}

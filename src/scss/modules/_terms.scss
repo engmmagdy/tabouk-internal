@@ -1,0 +1,35 @@
+.terms {
+    padding-top: 35px;
+    .terms__content {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 35px;
+        .terms__item {
+            font-size: 16px;
+            color: #404040;
+            font-weight: 500;
+            border-bottom: 1px solid#404040;
+        }
+        .terms__item--blue {
+            color: #0D7F97;
+            font-weight: 500;
+        }
+        .terms__item--blue:after {
+            content: "";
+            border: 9px solid transparent;
+            border-right: 14px solid #0D7F97;
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+            margin-bottom: -5px;
+        }
+    }
+    .terms__text{
+        font-size: 16px;
+       color: #404040;
+       font-weight: 400;
+    }
+}
+
+

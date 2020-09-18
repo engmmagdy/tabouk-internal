@@ -1,0 +1,26 @@
+.sideLinks {
+    padding: 30px 30px 0;
+    @include breakpoint(mid){
+        padding: 70px 30px 0;
+    }
+    li {
+        list-style: none;
+        a {
+            display: inline-block;
+            padding: 15px 40px;
+            margin: 5px 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            border-radius: 4em;
+            cursor: pointer;
+            position: relative;
+            &:before {
+                content: "\f0d9";
+                color: #fff;
+                font-family: fontawesome;
+                position: absolute;
+                right: 25px;
+            }
+        }
+    }
+}

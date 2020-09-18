@@ -1,0 +1,235 @@
+.main-title--flex {
+  display: flex;
+  justify-content: space-between;
+}
+.main-title {
+  font-size: rem(25);
+  font-weight: 500;
+  color: $color-text;
+  @include breakpoint(mid) {
+    font-size: rem(40);
+    &--md {
+      font-size: rem(30);
+      margin-bottom: 0.5em;
+    }
+  }
+  &--light {
+    color: #fff;
+    + .main-title__brief {
+      color: #fff;
+    }
+  }
+  &--primary {
+    color: $color-primary;
+  }
+
+  > p {
+    font-size: 0.4em;
+    margin-bottom: 0;
+  }
+}
+
+.main-title--icon {
+  display: flex;
+  align-items: center;
+
+  > svg {
+    width: 50px;
+    height: 50px;
+    fill: $color-primary;
+
+    @include breakpoint(isMobile) {
+      width: 60px;
+      height: 60px;
+      // margin-top: 30px;
+    }
+
+    @supports (margin-inline-end: 20px) {
+      margin-inline-end: 20px;
+    }
+    @supports not (margin-inline-end: 20px) {
+      margin-#{$end}: 20px;
+    }
+  }
+}
+
+.main-title__icon {
+  width: 50px;
+  height: 50px;
+  fill: $color-primary;
+  &--raised {
+    box-shadow: -0.521px 2.954px 13px 0px rgba(0, 0, 0, 0.11);
+    padding: 10px;
+  }
+  &--rounded {
+    border-radius: 50%;
+  }
+  @include breakpoint(isMobile) {
+    width: 60px;
+    height: 60px;
+    // margin-top: 30px;
+  }
+
+  @supports (margin-inline-end: 20px) {
+    margin-inline-end: 20px;
+  }
+  @supports not (margin-inline-end: 20px) {
+    margin-#{$end}: 20px;
+  }
+}
+
+.main-title__brief {
+  margin-top: 2vh;
+  margin-bottom: 0;
+}
+
+.title-panel {
+  background-color: $color-secondary;
+  // padding: 10px;
+}
+
+.title-panel__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.list-custom--dotte {
+  list-style: none;
+}
+
+// .list-custom li {
+//   //   margin-bottom: 0.3em;
+// }
+
+.list-custom--dotte li::before {
+  content: '\2022';
+  font-size: rem(20);
+  color: $color-primary;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  margin-#{$start}: -1em;
+}
+
+.list-custom {
+  list-style: none;
+  counter-reset: head;
+}
+
+.list-custom--number {
+  padding: 0;
+}
+
+.list-custom--number li {
+  display: flex;
+  margin-bottom: 1.3em;
+}
+
+.list-custom--number li::before {
+  counter-increment: head;
+  content: '0' counter(head);
+  font-size: rem(40);
+  color: $color-primary;
+  font-weight: normal;
+  // display: inline-block;
+  width: 1.5em;
+  margin-#{$end}: 1em;
+}
+
+.section-header{
+  margin-bottom: 15px;
+  @include breakpoint(large){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .form-control-icon{
+    @include breakpoint(large){
+      width: 230px;
+      margin-#{$end}: 15px;
+      margin-#{$start}: auto;
+    }
+  }
+  &--center{
+    justify-content: center;
+    .page-title span{
+      align-items: center;
+    }
+  }
+}
+.page-title{
+  font-size: rem(25);
+  margin: 0;
+  font-weight: 400;
+  @include breakpoint(isCommon){
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    .l-home-section &{
+      justify-content: center;
+    }
+  }
+  p, label {
+    color: $color-grey;
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  span{
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(isCommon){
+      .l-home-section &{
+        align-items: center;
+      }
+    }
+    &:after{
+      content: "";
+      width: 70px;
+      height: 4px;
+      margin-top: 0.5em;
+    }
+  }
+  &--primary{
+    span{
+      color: $color-primary;
+      &:after{
+        background-color: $color-primary;
+      }
+    }
+  }
+  &--secondary{
+    span{
+      color: $color-secondary;
+      font-size: 24px;
+      &:after{
+        background-color: $color-secondary;
+      }
+    }
+  }
+}
+.section-header__actions{
+  @include breakpoint(isCommon){
+    display: none;
+  }
+}
+.section__footer-actions{
+  display: flex;
+  margin-right: -8px;
+  margin-left: -8px;
+  justify-content: space-around;
+  .button{
+    flex: 0 0 calc(50% - 16px);
+  }
+  &--full{
+    .button{
+      flex: 0 0 calc(100% - 16px);
+    }
+  }
+  @include breakpoint(mid){
+    display: none;
+  }
+}

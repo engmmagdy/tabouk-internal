@@ -1,0 +1,98 @@
+.is-displayMode{
+    #s4-workspace {
+        overflow: hidden;
+        height: auto !important;
+        @include breakpoint(isMobile) {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    }
+    
+    body {
+        overflow: auto !important;
+        height: auto !important;
+        padding: 0 !important
+    }
+}
+
+#pageStatusBar[class],
+.ms-status-msg {
+    margin-bottom: 0;
+}
+
+.ms-cui-tts-scale-2 .ms-cui-tt-a{
+    width: auto;
+    padding: 0 10px;
+}
+
+#s4-bodyContainer {
+    padding-bottom: 0;
+}
+
+.ms-ToolPaneOuter {
+    font-family: Segoe UI, Tahoma;
+    z-index: 10;
+    position: relative;
+    font-size: 13px;
+    #{$end}: 20px;
+}
+
+input[type=text].form-control {
+    padding: 0.375rem 0.75rem;
+}
+
+.ms-core-sideNavBox-removeLeftMargin {
+    margin: 0;
+}
+
+// a,
+// a:active,
+// a:visited {
+//     color: inherit;
+// }
+
+
+.page-content-text{
+    *{
+        color: #000;
+    }
+    h1, h2, h3, h4, h5, h6{
+        color: $color-secondary--dark;
+        font-weight: 700;
+        margin-top: 1em;
+    }
+    h3{
+        color: #333;
+    }
+}
+// .ribbon-wrapper{
+//     display: none;
+// }
+.ms-webpart-zone,
+.ms-webpart-cell-vertical,
+.ms-webpart-chrome-vertical{
+    display: block;
+}
+.is-editMode {
+    .swiper-wrapper{
+        display: block;
+    }
+    .l-home-section{
+        height: auto;
+    }
+}
+.ms-webpart-titleText,
+.ms-webpart-titleText.ms-webpart-titleText{
+    font-size: 1.75rem;
+    color: #25816d;
+    font-weight: 700;
+    margin-bottom: 1.875rem;
+    font-family: $font-family ;
+}
+.is-editMode .edit-mode-panel,
+.edit-mode{
+    background-color: #eee;
+    padding: 20px;
+    margin-top: 40px;
+    border: 1px dashed #a7a7a7;
+}

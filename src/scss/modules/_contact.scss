@@ -1,0 +1,36 @@
+.contact {
+  display: flex;
+  align-items: center;
+  margin: 3em 0;
+}
+
+.contact__icon {
+  fill: $color-primary;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 4px;
+  margin-#{$end}: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+  padding: 8px;
+  //   transform: rotateY(180deg);
+}
+
+.contact__title {
+  color: $color-primary;
+  font-size: rem(18);
+}
+
+.contact__info {
+  font-size: rem(18);
+  color: $color-grey-900;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+  

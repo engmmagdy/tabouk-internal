@@ -1,0 +1,471 @@
+$slider-top: 160px;
+$slider-bottom: 80px;
+.welcome {
+  position: relative;
+  padding: 0;
+
+  &--static {
+    overflow: hidden;
+    height: 85vh;
+    background-size: cover;
+
+    @include breakpoint(isMobile) {
+      height: 40vh;
+    }
+  }
+
+  &--height {
+    height: auto;
+    background-size: 100% 70%;
+  }
+
+  &--prince {
+    background: url("#{$img-path}/council-banner.jpg") no-repeat 0 0 #eee;
+    background-size: 100%;
+  }
+}
+
+.welcome__content {
+  margin-top: 150px;
+  color: $color-white;
+
+  &--dark {
+    color: #000;
+  }
+
+  &--custom {
+    margin-top: 120px;
+    margin-bottom: 70px;
+  }
+}
+
+// .swiper-slide-active .welcome__banner{
+//   @include breakpoint(mid){
+//     // width: 150%;
+//     animation: scaleImg 120s infinite;
+//     animation-fill-mode: forwards;
+//   }
+// }
+.welcome__tab-panel {
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  height: 540px;
+  &:before {
+    content: '';
+    background: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    #{$end}: 0;
+    background-size: 60vh;
+    z-index: 10;
+  }
+
+  @include breakpoint(mid) {
+    height: 100vh;
+    max-height: 680px;
+  }
+}
+
+@keyframes scaleImg {
+
+  // from {width: 100%;}
+  // to {width: 150%;}
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.welcome__banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  // animation: scaleImg 120s infinite;
+  // animation-fill-mode: forwards;
+
+  // transition: all 120s ease-in-out;
+  &--static {
+    animation: none;
+  }
+}
+
+.welcome__container {
+  // background-color: $color-primary;
+  // padding-bottom: 20px;
+  // padding-top: 20px;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 100px;
+  bottom: 100px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  @include breakpoint(mid) {
+    top: #{$slider-top};
+    bottom: #{$slider-bottom};
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  &.is-animated {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.welcome__title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.5;
+  
+  @include breakpoint(mid) {
+    font-size: rem(35);
+    line-height: 1.9;
+  }
+
+  &--md {
+    @include breakpoint(mid) {
+      font-size: rem(35);
+      // margin-bottom: 0.5em;
+    }
+  }
+
+  &--lg {
+    @include breakpoint(mid) {
+      font-size: rem(60);
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+.welcome__subtitle {
+  font-size: rem(30);
+  font-weight: 400;
+
+  @include breakpoint(isMobile) {
+    display: none;
+  }
+}
+
+.welcome__text {
+  font-size: rem(20);
+  margin-top: rem(35);
+  line-height: 1.8;
+
+  @include breakpoint(isMobile) {
+    display: none;
+  }
+}
+
+.welcome__action {
+  margin-top: 10px;
+  @include breakpoint(isCommon){
+    flex-direction: column;
+  }
+  
+  .button,
+  .button + .button{
+    @include breakpoint(isCommon){
+      font-size: 16px;
+      margin: 15px 0;
+    }
+  }
+
+  @include breakpoint(mid) {
+    margin-top: rem(35);
+  }
+}
+
+.welcome__tab-bar {
+  @include breakpoint(mid) {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+  }
+}
+
+.welcome__tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint(mid) {
+    justify-content: space-between;
+  }
+
+  .swiper-slide {
+    padding-#{$end}: 50px;
+  }
+}
+
+.welcome__tab-item {
+  padding: rem(20) 0;
+  font-size: rem(20);
+  color: rgba(#fff, 0.75);
+  flex: 0 0 25%;
+  border-top: 3px solid rgba(#fff, 0.3);
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  @include transition();
+
+  @include breakpoint(isMobile) {
+    font-size: 0;
+    background-color: rgba(#000, 0.2);
+    margin: 10px 4px 0 4px;
+    border: 0;
+    padding: 2px;
+    flex: 0 0 20px;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:before {
+    @include breakpoint(mid) {
+      position: absolute;
+      content: '';
+      #{$start}: 0;
+      position: absolute;
+      height: 3px;
+      width: 0;
+      background: #fff;
+      top: -3px;
+      @include transition();
+    }
+  }
+
+  &.tabs__tab-item--active {
+    @include breakpoint(isMobile) {
+      background-color: $color-secondary;
+    }
+
+    color: #fff;
+
+    &:before {
+      width: 45%;
+    }
+  }
+}
+
+.swiper-slide-thumb-active .welcome__tab-item {
+  color: #fff;
+
+  &:before {
+    width: 45%;
+  }
+}
+
+.welcome__floating {
+  position: absolute;
+  width: 33.333%;
+  #{$end}: 0;
+  top: #{$slider-top};
+  bottom: #{$slider-bottom};
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 10;
+  padding-#{$end}: calc((100vw - 1140px)/2);
+
+  &--static {
+    top: 150px;
+    bottom: 40px;
+    width: 100%;
+  }
+
+  @include breakpoint(isCommon) {
+    display: none;
+  }
+  .swiper-pagination{
+    display: flex;
+    flex-direction: column;
+    .swiper-pagination-bullet{
+      margin: 5px 0;
+      position: relative;
+      &:before{
+        content: "";
+        width: 0;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        #{$end}: 20px;
+        top: 4px;
+        transition: all .2s ease-in-out;
+      }
+    }
+    .swiper-pagination-bullet-active{
+      background-color: #fff;
+      &:before{
+        content: "";
+        width: 60px;
+      }
+    }
+  }
+}
+
+.welcome__floating-container {
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.welcome-card {
+  position: relative;
+  height: 40%;
+  overflow: hidden;
+
+  +.welcome-card {
+    margin-top: 15px;
+  }
+}
+
+.welcome-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome-card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  text-shadow: 1.5px 2.598px 5px rgba(0, 0, 0, 0.21);
+  font-size: rem(22);
+  padding: 20px;
+  padding-#{$end}: 60px;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+  border-color: rgb(255, 255, 255);
+  background-image: -webkit-radial-gradient(50% 50%,
+      circle closest-side,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0.25) 100%);
+  box-shadow: 3px 4px 11px 3px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+
+    .welcome-card__arrow {
+      @include transition();
+      width: 100%;
+      background-color: rgba(#141414, 0.5);
+      justify-content: flex-end;
+    }
+  }
+}
+
+.welcome-card__arrow {
+  background-color: rgba(#141414, 0.85);
+  position: absolute;
+  #{$end}: 0;
+  top: 0;
+  bottom: 0;
+  width: 45px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  >svg {
+    fill: #fff;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.welcom-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.welcom-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(#fff, 0.8);
+  padding: 20px;
+  width: 195px;
+  @include transition();
+
+  +.welcom-card {
+    margin-#{$start}: 20px;
+  }
+
+  &:hover {
+    background-color: #fff;
+    text-decoration: none;
+  }
+}
+
+.welcom-card__icon {
+  width: 75px;
+  height: 75px;
+  fill: $color-secondary;
+  margin: 20px 0;
+}
+
+.welcom-card__title {
+  font-size: rem(20);
+  color: #000;
+
+  &--secondary {
+    color: $color-secondary;
+  }
+}
+
+@include breakpoint(isMobile) {
+  .welcome--prince {
+    .welcome__subtitle {
+      display: block;
+    }
+
+    .welcome__text {
+      display: block;
+    }
+
+    .button--md {
+      padding: 0.35em 2.3em 0.65em 0.3em;
+    }
+
+    .welcome__action {
+      margin-bottom: 20px;
+    }
+  }
+
+  .card-show {
+    margin-bottom: 20px;
+  }
+
+  .main-footer--dark .main-footer__links {
+    flex-direction: column;
+  }
+}
+.welcome__pagination{
+  position: absolute;
+}

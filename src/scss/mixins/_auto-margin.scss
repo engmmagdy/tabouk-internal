@@ -1,0 +1,6 @@
+@mixin auto-margin {
+  display: block;
+  margin-#{$start}: auto;
+  margin-#{$end}: auto;
+}
+

@@ -1,0 +1,45 @@
+.pager {
+    width: 100%;
+    clear: both;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-basis: 0;
+    flex-wrap: nowrap;
+    display: contents;
+    br {
+        display: none;
+    }
+    div {
+        width: 100%;
+        text-align: center;
+        direction: rtl;
+        margin: 0 auto;
+        a,
+        strong {
+            margin-#{$end}: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            background: $color-secondary;
+            line-height: 35px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            transition: background-color .2s ease-in-out;
+            -webkit-transition: background-color .2s ease-in-out;
+            -moz-transition: background-color .2s ease-in-out;
+            -ms-transition: background-color .2s ease-in-out;
+            &:hover {
+                text-decoration: none; 
+                background: $color-primary;
+            }
+        }
+        strong {
+            background: $color-primary;
+        }
+    }
+}

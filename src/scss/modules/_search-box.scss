@@ -1,0 +1,133 @@
+.search-box{
+    display: flex;
+    flex-direction: row-reverse;
+    @include breakpoint(isCommon){
+        background-color: #fff;
+        margin-top: 20px;
+    }
+    svg{
+        transition: all .3s ease-in-out;
+        @include breakpoint(isCommon){
+            fill: #000;
+        }
+    }
+    &:hover{
+        svg{
+            fill: $color-secondary;
+        }
+    }
+}
+.search-box__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    min-width: 10px;
+    border: 0;
+    &:focus,
+    &:hover{
+        outline: none;
+        background-color: transparent;
+    }
+    svg{
+        fill: #fff;
+    }
+}
+.search-box__input{
+    border: 0;
+    padding: 6px 10px;
+    width: calc(100% - 60px);
+    color: #000;
+    font-size: rem(16);
+    @include transition();
+    @include breakpoint(large){
+        color: #fff;
+        padding: 0;
+        width: 0;
+        background: transparent;
+        &::placeholder{
+            color: #fff;
+        }
+    }
+    &::placeholder{
+        color: #e2e2e2;
+    }
+}
+.search-box.is-open{
+    @include breakpoint(large){
+        .search-box__input{
+            padding-#{$end}: 15px;
+            width: 180px;
+        }
+    }
+}
+.search-panel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in;
+    &.is-open{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.search-panel__backdrop{
+    background-color: rgba(#fff, .95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.search-panel__content {
+    padding: 100px 0;
+    position: relative;
+}
+.search-panel__search-box{
+    border-bottom: 1px solid #BCBCBC;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    .search-panel__input {
+        flex: 1;
+        border: 0;
+        background: transparent;
+        color: #404040;
+        padding: 1em 2em;
+    }
+}
+.search-panel__icon{
+    fill: #404040;
+    width: 28px;
+    height: 28px;
+}
+.search-panel__close{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 10px;
+    transition: all .3s ease-in-out;
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        background-color: rgba($color: #000000, $alpha: .2);
+    }
+    svg{
+        width: 30px;
+        height: 30px;
+        margin: 0;
+    }
+}

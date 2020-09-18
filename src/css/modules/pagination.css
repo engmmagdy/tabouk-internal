@@ -1,0 +1,59 @@
+.pagination--auto {
+  width: auto;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination-container .first,
+.pagination-container .prev,
+.pagination-container .last,
+.pagination-container .next,
+.pagination-container .pagination__item {
+  margin: 0 3px;
+}
+
+.pagination-container .first a,
+.pagination-container .prev a,
+.pagination-container .last a,
+.pagination-container .next a,
+.pagination-container .pagination__item a {
+  border: 1px solid #ccc;
+  color: #404040;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-container .first a:hover,
+.pagination-container .prev a:hover,
+.pagination-container .last a:hover,
+.pagination-container .next a:hover,
+.pagination-container .pagination__item a:hover {
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
+.pagination-container .first--active a,
+.pagination-container .first--active a:hover,
+.pagination-container .prev--active a,
+.pagination-container .prev--active a:hover,
+.pagination-container .last--active a,
+.pagination-container .last--active a:hover,
+.pagination-container .next--active a,
+.pagination-container .next--active a:hover,
+.pagination-container .pagination__item--active a,
+.pagination-container .pagination__item--active a:hover {
+  background-color: #0D7F97;
+  border-color: #0D7F97;
+  color: #fff;
+}
+
+/*# sourceMappingURL=../maps/modules/pagination.css.map */

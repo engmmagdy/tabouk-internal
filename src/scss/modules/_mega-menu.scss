@@ -1,0 +1,54 @@
+.main-nav {
+    ul {
+        display: flex;
+        align-items: center;
+        padding-#{$start}: 1rem;
+
+        li {
+            display: block;
+
+            a {
+                font-size: 1rem;
+                color: #fff;
+                margin-left: 20px;
+                display: block;
+
+                &:hover,&.active {
+                    text-decoration: none;
+
+                    &::after {
+                        width: 100%;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 4px;
+                    background: #B6A103;
+                    transition: width .5s;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 0.5rem;
+                    text-align: center;
+                }
+            }
+
+
+
+
+        }
+    }
+}
+
+.portal-status h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.portal-status h4 {
+    font-size: 0.9rem;
+    color: #fff;
+}

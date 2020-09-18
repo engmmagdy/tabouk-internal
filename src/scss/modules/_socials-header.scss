@@ -1,0 +1,66 @@
+
+.socials-header {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.socials-header__share{
+    position: relative;
+    overflow: hidden;
+    iframe,
+    .socials-header__share-absolute{
+        position: absolute !important;
+        opacity: 0.01;
+        z-index: 10;
+        min-width: 100%;
+        min-height: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+.socials-header__font-size{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.rating-section{
+    a{
+        margin: 0 3px;
+    }
+}
+// .socials-header {
+//     position: relative;
+    
+//     #fb-share-button {
+//         padding: 0;
+//         position: relative;
+//         background: url(/Style%20Library/AseerBranding/images/svg/facebook.svg) 0 0 no-repeat;
+//         width: 25px;
+//         height: 25px;
+//         display: inline-block;
+//         opacity: .6;
+//         position: relative;
+//         top: 12px;
+//         &:hover {
+//             color: #fff;
+//         }
+//         span {
+//             display: inline-block;
+//             position: relative;
+//             text-align: justify;
+//             height: 40px !important;
+//             width: auto !important;
+//             iframe {
+//                 position: absolute;
+//                 width: 30px !important;
+//                 height: 40px !important;
+//                 #{$end}: -7px;
+//                 opacity: 0;
+//                 top: 5px;
+//             }
+//         }
+//     }
+// }

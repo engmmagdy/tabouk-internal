@@ -1,0 +1,32 @@
+// Pagination
+
+@mixin pagination-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+  .page-link {
+    padding: $padding-y $padding-x;
+    font-size: $font-size;
+    line-height: $line-height;
+  }
+
+  .page-item {
+    &:first-child {
+      .page-link {
+        @if($lang == 'en'){
+          @include border-left-radius($border-radius);
+        }
+        @if($lang == 'ar'){
+          @include border-right-radius($border-radius);
+        }
+      }
+    }
+    &:last-child {
+      .page-link {
+        @if($lang == 'en'){
+          @include border-right-radius($border-radius);
+        }
+        @if($lang == 'ar'){
+          @include border-left-radius($border-radius);
+        }
+      }
+    }
+  }
+}

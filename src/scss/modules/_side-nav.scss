@@ -1,0 +1,208 @@
+.side-nav {    
+    background-color: rgba(#EFEFEF, .3);
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    overflow: hidden;
+    // @include breakpoint(isMobile){
+    //     display: none;
+    // }
+    .ms-core-listMenu-verticalBox{
+        ul {
+            padding: 0;
+            list-style: none;
+            li {
+                a.ms-core-listMenu-item {
+                    color: #404040;
+                    padding: 12px 15px;
+                    font-family: $font-family;
+                    font-size: 14px;
+                    transition: all .2s ease-in-out;
+                    background: none;
+                    width: auto;
+                    display: flex;
+                    &:hover,
+                    &.selected,
+                    &.active{
+                        color: #fff;
+                        font-weight: 400;
+                        background: $color-primary;
+                    }
+                }
+                span.ms-core-listMenu-item {
+                    padding: 12px 15px;
+                    font-family: $font-family;
+                    font-weight: 500;
+                    color: #404040;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+.side-nav-wrapper{
+    @include breakpoint(isCommon){
+        order: 1;
+    }
+    .card{
+        border: 1px solid #D3D3D3;
+    }
+    .card__actions {
+        text-align: center;
+        font-size: 12px;
+        padding: 2em 0.8em;
+        a{
+            color: #000;
+        }
+    }
+}
+
+.side-bar {
+    padding: 48px 0;
+    height: 100%;
+    background-color: #F4F4F4;
+    @include breakpoint(isCommon){
+        width: 200px;
+        z-index: 10;
+        height: 100%;
+        overflow: auto;
+        position: relative;
+        transform: translate(20px, 0);
+        @include transition();
+    }
+}
+
+.side-bar__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.side-bar__link {
+    display: flex;
+    text-decoration: none;
+    font-size: 14px;
+    color: #404040;
+    width: 100%;
+    padding: 16px 30px; 
+    line-height: 0.9;
+    position: relative;
+    &:after{
+        content: "";
+        width: 0;
+        height: 2px;
+        background: $color-primary;;
+        position: absolute;
+        bottom: 0;
+    }
+}
+.side-bar__link:hover,
+.side-bar__link--active{
+    background-color: #fff;
+    text-decoration: none;
+    color: $color-primary;
+}
+.side-bar__link--active{
+    &:after{
+        width: 30%;        
+    }
+}
+.side-bar__icon {
+    width: 18px;
+    height: 18px;
+    margin-#{$end}: 12px;    
+}
+
+
+// .side-bar__title--active {
+//     background-color: #ffff;
+//     a {
+//       border-bottom: 1px solid $color-primary;
+//     }
+//       .side-bar__title {
+//           color: $color-primary;
+//       }
+// }
+ .side-bar__butten {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+ }
+.side-bar__help {
+    margin-top: 105px;
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+   .side-bar__link {
+       padding-top: 0px;
+   }
+}
+
+
+
+  .card__service-item {
+    display: flex;
+    justify-content: space-between;
+}
+    .card__service-icon {
+        width: 24px;
+        height: 24px;
+       fill: #4040407d;
+    }
+    .card__service-icon--svg {
+        width: 32px;
+        height: 32px;
+        fill: #fff;
+        background-color: red;
+        border-radius: 50%;
+    }
+    .card__service-icon--svg1 {
+        width: 37px;
+        height: 37px;
+        fill: #fff;
+        background-color: $color-primary;
+        border-radius: 50%;
+        padding: 6px;
+    }
+ .card__service-svg {
+     margin-top: 12px;
+ }
+ input[type="radio"], input[type="checkbox"] {
+     margin-top: 15px;
+ }
+
+ .form-group__content {
+     display: flex;
+     justify-content: space-between;
+     span {
+         color: red;
+     }
+ }
+ .side-bar__backdrop{
+     display: none;
+     @include breakpoint(isCommon){
+         display: block;
+         position: fixed;
+         background: rgba(0, 0, 0, 0.4);
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+     }
+ }
+ .side-bar__close{
+     display: none;
+     @include breakpoint(isCommon){
+        display: block;
+        padding: 0;
+        background: transparent;
+        border: 0;
+        position: absolute;
+        top: 10px;
+        #{$end}: 10px;
+        min-width: 10px;
+        outline: none;
+     }
+ }

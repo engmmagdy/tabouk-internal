@@ -1,0 +1,28 @@
+@media print {
+    .ribbon-wrapper,
+    // .header,
+    // .page-header,
+    .breadcrumb,
+    .vertical-nav,
+    .socials__header,
+    .main-footer,
+    .side-nav,
+    .socials-header,
+    .main-footer__quick-links {
+        display: none !important;;
+    }
+
+    .l-container{
+        padding: 0 !important;
+    }
+    .page-header .top-banner{
+        padding-bottom: 40px;
+    }
+    .page-content-text{
+        margin-top: 40px;
+    }
+    .main-title{
+        color: #fff;
+    }
+    
+} 

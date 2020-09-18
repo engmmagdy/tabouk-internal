@@ -1,0 +1,209 @@
+.form-control-icon{
+    position: relative;
+    .form-control{
+        height: 100%;
+        padding-#{$end}: 35px;
+    }
+}
+.form-control-icon__icon{
+    width: 14px;
+    position: absolute;
+    #{$end}: 0.8em;
+    top: 0;
+    height: 100%;
+    fill: #404040;
+}
+.form-steps{
+    display: flex;
+    padding: 0;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+li.form-steps__item {
+    &--previous{
+        .form-steps__link{
+            color: #fff;
+            background: url("#{$img-path}/check.svg") $color-secondary no-repeat left center;
+            background-size: 15px;
+            @include breakpoint(isCommon){
+                padding-right: 12px;
+                padding-left: 12px;
+            }
+            &:after{
+                background-color: $color-secondary;
+            }
+        }
+        .form-steps__icon{
+            fill: #fff;
+            @include breakpoint(isCommon){
+                display: none;
+            }
+        }
+    }
+    &--current{
+        .form-steps__link{
+            color: #fff;
+            background-color: $color-primary;
+            &:after{
+                background-color: $color-primary;
+            }
+            span{
+                @include breakpoint(isCommon){
+                    display: inline;
+                }
+            }
+        }
+        .form-steps__icon{
+            fill: #fff;
+            margin-#{$end}: 8px;
+        }
+    }
+}
+.form-steps__link{
+    display: flex;
+    padding: 14px 25px;
+    font-size: 14px;
+    color: #404040;
+    background-color: #F0F0F0;
+    position: relative;
+
+    @include breakpoint(isCommon){
+        padding: 14px 0;    
+        height: 50px;
+    }
+    span{
+        @include breakpoint(isCommon){
+            display: none;
+        }
+    }
+    &:hover{
+        text-decoration: none;
+    }
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 30px;
+        background: #fff;
+        top: 0;
+        #{$start}: 100%;
+        z-index: 1;
+        clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 30% 50%, 100% 0%);
+    }
+    &:after{
+        width: 28px;
+        #{$start}: calc(100% - 0.1%);
+        background: #F0F0F0;
+    }
+}
+.form-steps__item:not(:first-child){
+    .form-steps__link{
+        padding-#{$start}: 25px;
+        @include breakpoint(large){
+            padding-#{$start}: 35px;
+        }
+    }
+}
+.form-steps__icon{
+    width: 20px;
+    height: 20px;
+    fill: #404040;
+    @include breakpoint(large){
+        margin-#{$end}: 8px;
+    }
+}
+.file-upload {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.file-upload__content {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    width: 100%;
+    background: #F4F4F4;
+    cursor: pointer;
+    color: #4040407d;
+    height: 85px;
+}
+  
+  
+.file-upload__input {
+      display: inline-block;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      cursor: pointer;
+  }
+
+
+// date picker
+.list-unstyled{
+    padding: 0;
+    font-size: 12px;
+    .btn{
+        box-shadow: none;
+        &:hover{
+            background: transparent;
+
+        }
+    }
+}
+
+.form-control--w60 {
+    @include breakpoint(mid) {
+        width: 60px !important;
+    }
+}
+.attachments-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.attachments-list__item{
+    display: flex;
+    margin-bottom: 20px;
+}
+.attachments-list__icon{
+    width: 20px;
+    height: 20px;
+    margin-#{$end}: 15px;
+}
+.attachments-list__name{
+    font-size: 14px;
+    color: $color-primary;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+.attachments-list__actions{
+    display: flex;
+}
+.attachments-list__button{
+    border: 0;
+    background-color: transparent;
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0;
+    display: inline-flex;
+    margin-#{$end}: 10px;
+    svg{
+        width: 100%;
+        height: 100%;
+        fill: #797979;
+    }
+    &--delete{
+        svg{
+            fill: #f82929;
+        }
+    }
+    &:hover{
+        background-color: transparent;
+    }
+}

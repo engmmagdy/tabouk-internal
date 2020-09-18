@@ -1,0 +1,31 @@
+.interactive {
+    text-align: center;
+}
+.interactive__img {
+    width: unset;
+}
+.debit-credit {
+    h2 {
+        color: $color-secondary;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    .form-group--flex {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+      
+    }
+    .form-control-icon__width  {
+        width: 24px;
+    }
+    .form-control, input[type].form-control, select.form-control {
+        width: 350px;
+        height: 60px;
+        font-size: 35px;
+        padding-bottom: 22px;
+        color: $color-secondary;
+    }
+    
+}

@@ -1,0 +1,35 @@
+// .vertical-nav{
+
+// }
+.vertical-nav__icon{
+    background-color: rgba(255, 255, 255,.1);
+    box-shadow: 0px 0px 49px 0px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    @supports (margin-inline-end: auto) {
+        margin-inline-end: 0;
+    }
+    @supports not (margin-inline-end: auto) {
+        margin-#{$end}: 0;
+    }
+    &:hover{
+        > svg{
+            fill: #fff !important;
+        }
+    }
+}
+.vertical-nav--side{
+    @include breakpoint(mid){
+        display: none;
+    }
+    .vertical-nav__icon{
+        @supports (margin-inline-end: auto) {
+            margin-inline-end: 0;
+            margin-inline-start: 20px;
+        }
+        @supports not (margin-inline-end: auto) {
+            margin-#{$end}: 0;
+            margin-#{$start}: 20px;
+        }
+    }
+}
+  

@@ -1,0 +1,60 @@
+.icon {
+    display: inline-flex;
+    // padding: $icons-padding;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include transition();
+
+    >svg {
+        fill: rgba(#000, .54);
+        width: 24px;
+        height: 24px;
+
+        @include breakpoint(small) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &:hover {
+        background-color: rgba(#000, .2);
+
+        >svg {
+            fill: rgba(#000, .54);
+        }
+    }
+
+    &--squared {
+        border-radius: 0;
+        border: 1px solid;
+    }
+
+    &--white {
+        color: #fff;
+        border-color: #fff;
+
+        >svg {
+            fill: #fff;
+        }
+    }
+}
+
+.icon--white:hover {
+    background-color: transparent;
+
+    >svg {
+        fill: #fff;
+    }
+}
+
+.icon--squared:hover {
+    border-color: $color-secondary;
+}
+
+.icon-svg {
+    display: inline-block;
+}
