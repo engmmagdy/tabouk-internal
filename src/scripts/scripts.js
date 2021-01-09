@@ -1,7 +1,9 @@
 $(function () {
-  
-  //$('marquee li').trigger('mouseout');
 
+  //$('marquee li').trigger('mouseout');
+  if (typeof FileDrop !== 'undefined') {
+    FileDrop()
+  }
   $(".services__slider").slick({
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -17,8 +19,8 @@ $(function () {
     pauseOnHover: false
   });
 
-  
-  
+
+
 });
 
 
@@ -90,3 +92,4 @@ var bar2 = new ProgressBar.SemiCircle('#askProgress', {
 });
 
 bar2.animate(0.8);  // Number from 0.0 to 1.0
+
