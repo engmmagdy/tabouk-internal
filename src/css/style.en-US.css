@@ -26449,6 +26449,16 @@ button.button--cancel:hover {
   overflow: hidden;
 }
 
+.btn.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
 .form-control-icon {
   position: relative;
 }
@@ -34873,6 +34883,50 @@ input[type="checkbox"] {
 
 .upload-area.drag {
   background-color: rgba(35, 70, 69, 0.2);
+}
+
+.custom-control-label .custom-control-input + .switch {
+  width: 40px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-control-label .custom-control-input + .switch::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #c8c8c8;
+  transition: all 300ms;
+}
+
+.custom-control-label .custom-control-input + .switch:hover {
+  background-color: #e6e6e6;
+}
+
+.custom-control-label .custom-control-input + .switch:active {
+  background-color: #e1e1e1;
+}
+
+.custom-control-label .custom-control-input + .switch:active::before {
+  background-color: #aeaeae;
+  width: 25px;
+}
+
+.custom-control-label .custom-control-input:checked + .switch::before {
+  right: 50%;
+  background-color: #234645;
+}
+
+.custom-control-label .custom-control-input:checked + .switch:active::before {
+  background-color: #1b3534;
+  width: 25px;
 }
 
 /*# sourceMappingURL=maps/style.en-US.css.map */
