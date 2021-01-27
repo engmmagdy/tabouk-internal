@@ -18907,7 +18907,7 @@ select.form-control:focus::-ms-value {
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
-  height: calc( 1.8125rem + 2px);
+  height: calc( 1.8125rem + 2px);
 }
 
 .form-control-lg, .input-group-lg > .form-control,
@@ -18922,7 +18922,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]) {
-  height: calc( 2.875rem + 2px);
+  height: calc( 2.875rem + 2px);
 }
 
 .form-group {
@@ -20332,7 +20332,7 @@ tbody.collapse.show {
 }
 
 .custom-select-sm {
-  height: calc( 1.8125rem + 2px);
+  height: calc( 1.8125rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%;
@@ -26696,6 +26696,32 @@ li.form-steps__item--current .form-steps__icon {
 
 .attachments-list__button:hover {
   background-color: transparent;
+}
+
+.login-form {
+  border: 1px solid #f2f2f2;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-shadow: 3px 6px 20px #f2f2f2;
+}
+
+.login-form .form_title {
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #256952;
+}
+
+.login-form .forget-password {
+  font-size: 0.8rem;
+}
+
+.login-info {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #404040;
+  margin-top: 20px;
 }
 
 .l-row {
