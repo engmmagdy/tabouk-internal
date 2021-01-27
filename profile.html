@@ -1037,6 +1037,189 @@
                             </div>
                         </div>
 
+
+                        <div class="col-12 p-2">
+                            <div class="bg-white p-3 rounded">
+                                <div class="d-flex justify-content-between">
+                                    <div class="heading__title p-0">
+                                        <h2>
+                                            الجدول الدراسي
+                                        </h2>
+                                    </div>
+
+                                </div>
+                                <form class="mt-4">
+                                    <div class="form-group row align-items-center mx-0 mb-2">
+                                        <div class="col-12">
+                                            <div class="row mx-0 mb-3 justify-content-center align-items-center">
+
+                                                <div class="col-xl-3 col-12">
+                                                    <div class="form-group">
+                                                        <select class="form-control">
+                                                            <option hidden selected>
+                                                                اليوم
+                                                            </option>
+                                                            <option value='1'>
+                                                                الأحد
+                                                            </option>
+                                                            <option value='2'>
+                                                                الإثنين
+                                                            </option>
+                                                            <option value='3'>
+                                                                الثلاثاء
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-12">
+                                                    <div class="form-group">
+                                                        <input class="form-control" placeholder="اسم المادة \ النشاط" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-2 col-6">
+                                                    <div class="form-group d-flex align-items-center">
+                                                        <label class="pl-1">من</label>
+                                                        <input type="time" class="form-control" placeholder="من" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-2 col-6">
+                                                    <div class="form-group d-flex align-items-center">
+                                                        <label class="pl-1">إلى</label>
+                                                        <input type="time" class="form-control" placeholder="إلى" />
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-xl-1 col-12 mt-lg-0 mt-2 d-flex justify-content-end align-items-start">
+                                                    <div class="form-group">
+                                                        <button type="button" class="btn btn-primary rounded">
+                                                            أضافة
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- table -->
+                                            <table class="table table-bordered">
+                                                <thead class="text-center">
+                                                    <tr>
+                                                        <th style="width: 100px;">
+                                                            <h6 class="text-primary">
+                                                                اليوم
+                                                            </h6>
+                                                        </th>
+                                                        <th>
+                                                            <h6 class="text-primary">
+                                                                المادة
+                                                            </h6>
+                                                        </th>
+                                                        <th colspan="2" style="width: 200px;">
+                                                            <h6 class="text-primary">
+                                                                الوقت
+                                                            </h6>
+                                                        </th>
+                                                        <th style="width: 100px;">
+                                                            <h6 class="text-primary">
+                                                                تعديل
+                                                            </h6>
+                                                        </th>
+                                                        <th style="width: 100px;">
+                                                            <h6 class="text-primary">
+                                                                حذف
+                                                            </h6>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style="border: none;"></th>
+                                                        <th style="border: none;"></th>
+                                                        <th style="width: 70px;">
+                                                            <h6 class="text-primary">
+                                                                من
+                                                            </h6>
+                                                        </th>
+                                                        <th style="width: 70px;">
+                                                            <h6 class="text-primary">
+                                                                إلي
+                                                            </h6>
+                                                        </th>
+                                                        <th style="width: 100px;"></th>
+                                                        <th style="width: 100px;"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id='table-values' class="text-center">
+                                                    <tr>
+                                                        <td>
+                                                            <span class="text-primary">
+                                                                الأحد
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-primary">
+                                                                ذكاء اصطناعي
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-primary">
+                                                                12:00
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-primary">
+                                                                17:00
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-success rounded">
+                                                                تعديل
+                                                            </button>
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-danger rounded">
+                                                                حذف
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="text-primary">
+                                                                الإثنين
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-primary">
+                                                                ذكاء اصطناعي
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-primary">
+                                                                13:00
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-primary">
+                                                                17:00
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-success rounded">
+                                                                تعديل
+                                                            </button>
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-danger rounded">
+                                                                حذف
+                                                            </button>
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
