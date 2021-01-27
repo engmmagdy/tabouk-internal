@@ -18907,7 +18907,7 @@ select.form-control:focus::-ms-value {
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
-  height: calc( 1.8125rem + 2px);
+  height: calc( 1.8125rem + 2px);
 }
 
 .form-control-lg, .input-group-lg > .form-control,
@@ -18922,7 +18922,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]) {
-  height: calc( 2.875rem + 2px);
+  height: calc( 2.875rem + 2px);
 }
 
 .form-group {
@@ -20332,7 +20332,7 @@ tbody.collapse.show {
 }
 
 .custom-select-sm {
-  height: calc( 1.8125rem + 2px);
+  height: calc( 1.8125rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%;
@@ -26449,6 +26449,16 @@ button.button--cancel:hover {
   overflow: hidden;
 }
 
+.btn.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
 .form-control-icon {
   position: relative;
 }
@@ -27160,14 +27170,41 @@ body {
 }
 
 .user-profile .user-info .user__image {
-  width: 35%;
+  width: 120px;
+  height: 120px;
   margin: 0 auto;
   display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
 }
 
 .user-profile .user-info .user__image img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 50%;
+}
+
+.user-profile .user-info .user__image .upload-label {
+  cursor: pointer;
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  opacity: 0.5;
+  padding: 0.25rem 0;
+  transition: all 300ms;
+}
+
+.user-profile .user-info .user__image .upload-label:hover {
+  opacity: 1;
+}
+
+.user-profile .user-info .user__image .upload-label .icon-wrapper img {
+  width: 40px;
 }
 
 .user-profile .user-info .user__name {
@@ -34836,6 +34873,60 @@ input[type="checkbox"] {
   cursor: default;
   pointer-events: none;
   color: #234645;
+}
+
+.upload-area {
+  border: 2px dashed #234645;
+  background-color: transparent;
+  transition: all 300ms;
+}
+
+.upload-area.drag {
+  background-color: rgba(35, 70, 69, 0.2);
+}
+
+.custom-control-label .custom-control-input + .switch {
+  width: 40px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-control-label .custom-control-input + .switch::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #c8c8c8;
+  transition: all 300ms;
+}
+
+.custom-control-label .custom-control-input + .switch:hover {
+  background-color: #e6e6e6;
+}
+
+.custom-control-label .custom-control-input + .switch:active {
+  background-color: #e1e1e1;
+}
+
+.custom-control-label .custom-control-input + .switch:active::before {
+  background-color: #aeaeae;
+  width: 25px;
+}
+
+.custom-control-label .custom-control-input:checked + .switch::before {
+  right: 50%;
+  background-color: #234645;
+}
+
+.custom-control-label .custom-control-input:checked + .switch:active::before {
+  background-color: #1b3534;
+  width: 25px;
 }
 
 /*# sourceMappingURL=maps/style.en-US.css.map */
