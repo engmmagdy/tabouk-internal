@@ -439,68 +439,70 @@ body {
 
     }
 
-    .user-attendance {
+  
+}
+
+.user-attendance {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-bottom: 1px solid #dbdbdb;
+
+    .time__attendance {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #125541;
+    }
+
+    .user-profile_links {
         display: flex;
-        justify-content: space-between;
-        align-items: start;
-        border-bottom: 1px solid #dbdbdb;
+        padding-#{$start}: 0;
+    }
 
-        .time__attendance {
-            margin-left: 0;
-            margin-right: 0;
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: #125541;
-        }
+    li {
+        display: inline-flex;
+        margin-#{$start}: 0.6rem;
 
-        .user-profile_links {
-            display: flex;
-            padding-#{$start}: 0;
-        }
-
-        li {
+        a {
             display: inline-flex;
-            margin-#{$start}: 0.6rem;
+            background-color: #FAFAFA;
+            border: 1px solid #B6A103;
+            padding: 0.5rem 0.5rem;
+            border-radius: 0.3rem;
+            transition: background-color 0.2s ease-in-out;
+            -webkit-transition: background-color 0.2s ease-in-out;
+            -moz-transition: background-color 0.2s ease-in-out;
+            -ms-transition: background-color 0.2s ease-in-out;
 
-            a {
-                display: inline-flex;
-                background-color: #FAFAFA;
-                border: 1px solid #B6A103;
-                padding: 0.5rem 0.5rem;
-                border-radius: 0.3rem;
-                transition: background-color 0.2s ease-in-out;
-                -webkit-transition: background-color 0.2s ease-in-out;
-                -moz-transition: background-color 0.2s ease-in-out;
-                -ms-transition: background-color 0.2s ease-in-out;
+            svg {
+                width: 14px;
+                height: 14px;
+                fill: #B6A103;
+            }
+
+            &:hover {
+                background-color: #125541;
 
                 svg {
-                    width: 14px;
-                    height: 14px;
-                    fill: #B6A103;
-                }
-
-                &:hover {
-                    background-color: #125541;
-
-                    svg {
-                        fill: #fff;
-                    }
+                    fill: #fff;
                 }
             }
         }
     }
+}
 
-    .attendance-section {
-        h3 {
-            font-size: 1.1rem;
-            color: #B6A103;
-        }
+.attendance-section {
+    h3 {
+        font-size: 1.1rem;
+        color: #B6A103;
+    }
 
-        span {
-            display: inline-block;
-            margin-bottom: 2.2rem;
-            font-weight: 500;
-        }
+    span {
+        display: inline-block;
+        margin-bottom: 2.2rem;
+        font-weight: 500;
     }
 }
 

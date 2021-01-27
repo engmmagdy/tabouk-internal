@@ -26426,14 +26426,14 @@ body {
   width: 80%;
 }
 
-.user-profile .user-attendance {
+.user-attendance {
   display: flex;
   justify-content: space-between;
   align-items: start;
   border-bottom: 1px solid #dbdbdb;
 }
 
-.user-profile .user-attendance .time__attendance {
+.user-attendance .time__attendance {
   margin-left: 0;
   margin-right: 0;
   font-size: 1.2rem;
@@ -26441,17 +26441,17 @@ body {
   color: #125541;
 }
 
-.user-profile .user-attendance .user-profile_links {
+.user-attendance .user-profile_links {
   display: flex;
   padding-right: 0;
 }
 
-.user-profile .user-attendance li {
+.user-attendance li {
   display: inline-flex;
   margin-right: 0.6rem;
 }
 
-.user-profile .user-attendance li a {
+.user-attendance li a {
   display: inline-flex;
   background-color: #FAFAFA;
   border: 1px solid #B6A103;
@@ -26463,26 +26463,26 @@ body {
   -ms-transition: background-color 0.2s ease-in-out;
 }
 
-.user-profile .user-attendance li a svg {
+.user-attendance li a svg {
   width: 14px;
   height: 14px;
   fill: #B6A103;
 }
 
-.user-profile .user-attendance li a:hover {
+.user-attendance li a:hover {
   background-color: #125541;
 }
 
-.user-profile .user-attendance li a:hover svg {
+.user-attendance li a:hover svg {
   fill: #fff;
 }
 
-.user-profile .attendance-section h3 {
+.attendance-section h3 {
   font-size: 1.1rem;
   color: #B6A103;
 }
 
-.user-profile .attendance-section span {
+.attendance-section span {
   display: inline-block;
   margin-bottom: 2.2rem;
   font-weight: 500;
