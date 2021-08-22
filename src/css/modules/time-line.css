@@ -31,7 +31,7 @@
   padding-top: 10px;
   display: flex;
   justify-content: center;
-  border-top: 2px solid #234645;
+  border-top: 2px solid #256952;
   position: relative;
   transition: all 200ms ease-in;
   margin-top: 5px;
@@ -54,7 +54,7 @@
   height: 10px;
   background-color: white;
   border-radius: 15px;
-  border: 1px solid #234645;
+  border: 1px solid #256952;
   position: absolute;
   top: -6px;
   left: calc(50% - 5px);
@@ -67,13 +67,13 @@
 }
 
 .time-line .statusItem.active span:before {
-  background-color: #234645;
+  background-color: #256952;
 }
 
 .time-line .statusItem.active a {
   cursor: default;
   pointer-events: none;
-  color: #234645;
+  color: #256952;
 }
 
 /*# sourceMappingURL=../maps/modules/time-line.css.map */

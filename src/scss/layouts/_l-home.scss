@@ -304,9 +304,10 @@ body {
 .heading__title {
     font-size: 1rem;
     display: flex;
-    padding: 30px 20px 0;
+    // padding: 10px 20px 0;
     justify-content: start;
     align-items: center;
+    margin-bottom: 1.5rem;
 
     h2 {
         margin: 0;
@@ -467,7 +468,7 @@ body {
 
     }
 
-  
+
 }
 
 .user-attendance {
@@ -906,6 +907,7 @@ body {
     .user__action-item {
         flex: 0 0 25%;
         max-width: 25%;
+        margin-bottom: 20px;
 
         &:before {
             content: "";
@@ -926,7 +928,6 @@ body {
             border: 1px solid #b6a103;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
 
             img {
                 width: 100%;
@@ -955,16 +956,34 @@ body {
     }
 }
 
+.favourit-services {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 .favourit-services__content {
     display: flex;
     justify-content: start;
-    align-items: center;
-    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
 
     .service__item {
-        flex: 0 0 15%;
-        max-width: 15%;
+        display: flex;
+        flex: 0 0 calc(15% - 10px);
+        max-width: calc(15% - 10px);
         text-align: center;
+        cursor: pointer;
+        margin: 0 4px;
+        @include transition();
+
+        a {
+            display: flex;
+            flex-direction: column;
+            padding: 0 2px;
+            justify-content: flex-start;
+            align-items: center;
+        }
 
         img {
             max-width: 95px;
@@ -975,6 +994,10 @@ body {
             display: inline-block;
             text-align: center;
             font-size: 14px;
+        }
+
+        &:hover {
+            filter: drop-shadow(2px 4px 6px #777);
         }
     }
 }
@@ -1046,5 +1069,15 @@ body {
     &:hover {
         background-color: #125541;
         color: #fff;
+    }
+}
+
+.iframe-container {
+    height: 100vh;
+    overflow: hidden;
+    iframe {
+        width: 100%;
+        border: none;
+        height: 100%;
     }
 }
