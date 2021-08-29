@@ -311,13 +311,13 @@ body {
 
     h2 {
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.4rem;
         color: #646D82;
     }
 
     svg {
-        width: 16px;
-        height: 16px;
+        width: 24px;
+        height: 24px;
         fill: #b6a103;
         margin-left: 5px;
     }
@@ -986,18 +986,28 @@ body {
         }
 
         img {
-            max-width: 95px;
-            width: auto;
+            // max-width: 95px;
+            width: 95px;
         }
 
         .service__title {
             display: inline-block;
             text-align: center;
             font-size: 14px;
+            color: rgba(#000, .5);
+            margin-top: .8em;
         }
 
         &:hover {
             filter: drop-shadow(2px 4px 6px #777);
+
+            a {
+                text-decoration: none;
+            }
+
+            .service__title {
+                color: #000;
+            }
         }
     }
 }
@@ -1007,25 +1017,30 @@ body {
     max-width: 10%;
 
     >a {
-        width: 95px;
-        height: 95px;
-        display: inline-block;
-        background: #E1E1E1;
-        border-radius: 50%;
-        text-decoration: none;
+        // width: 75px;
+        // height: 75px;
+        // background: #E1E1E1;
+        // border-radius: 50%;
+        // text-decoration: none;
+        // display: inline-block;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
 
-        &:before {
-            content: "+";
-            text-align: center;
-            font-size: 60px;
-            color: #fff;
-            font-family: 'Courier New', Courier, monospace;
-            line-height: 95px;
-
+        svg {
+            background: #E1E1E1;
+            border-radius: 50%;
+            text-decoration: none;
+            width: 95px;
+            height: 95px;
+            fill: #999;
+            padding: 10px;
         }
 
         &:hover {
-            background: #d5d5d5;
+            svg {
+                background: #d5d5d5;
+            }
         }
     }
 }
@@ -1043,8 +1058,10 @@ body {
         color: #fff;
         text-align: center;
         width: 50%;
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 10px;
+        padding: 5px 10px;
+        border-radius: 4px
     }
 
     a {
@@ -1075,6 +1092,7 @@ body {
 .iframe-container {
     height: 100vh;
     overflow: hidden;
+
     iframe {
         width: 100%;
         border: none;

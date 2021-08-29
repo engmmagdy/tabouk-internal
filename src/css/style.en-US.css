@@ -49,6 +49,7 @@ html > .ms-core-needIEFilter {
 }
 
 #s4-workspace {
+  height: 100vh;
   overflow: auto;
   position: relative;
 }
@@ -27146,13 +27147,13 @@ body {
 
 .heading__title h2 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #646D82;
 }
 
 .heading__title svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   fill: #b6a103;
   margin-left: 5px;
 }
@@ -27736,18 +27737,27 @@ body {
 }
 
 .favourit-services__content .service__item img {
-  max-width: 95px;
-  width: auto;
+  width: 95px;
 }
 
 .favourit-services__content .service__item .service__title {
   display: inline-block;
   text-align: center;
   font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: .8em;
 }
 
 .favourit-services__content .service__item:hover {
   filter: drop-shadow(2px 4px 6px #777);
+}
+
+.favourit-services__content .service__item:hover a {
+  text-decoration: none;
+}
+
+.favourit-services__content .service__item:hover .service__title {
+  color: #000;
 }
 
 .service__item.empty__item {
@@ -27755,25 +27765,17 @@ body {
   max-width: 10%;
 }
 
-.service__item.empty__item > a {
-  width: 95px;
-  height: 95px;
-  display: inline-block;
+.service__item.empty__item > a svg {
   background: #E1E1E1;
   border-radius: 50%;
   text-decoration: none;
+  width: 95px;
+  height: 95px;
+  fill: #999;
+  padding: 10px;
 }
 
-.service__item.empty__item > a:before {
-  content: "+";
-  text-align: center;
-  font-size: 60px;
-  color: #fff;
-  font-family: 'Courier New', Courier, monospace;
-  line-height: 95px;
-}
-
-.service__item.empty__item > a:hover {
+.service__item.empty__item > a:hover svg {
   background: #d5d5d5;
 }
 
@@ -27790,8 +27792,10 @@ body {
   color: #fff;
   text-align: center;
   width: 50%;
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 .meeting-item a h2 {
@@ -28005,6 +28009,79 @@ body {
 .top-menu_buttons .btn.btn--bordered.rounded:hover {
   background-color: #fff;
   color: #125541;
+}
+
+.header-user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  padding: 5px 8px;
+}
+
+.header-user:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: .2s all ease-in-out;
+}
+
+.header-user__icon {
+  fill: #fff;
+  width: 22px;
+  height: 22px;
+}
+
+.header-user__text {
+  color: #fff;
+  margin: 0;
+  font-size: 14px;
+}
+
+.header-user__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px 0;
+  z-index: 1;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+  transition: .2s all ease-in-out;
+  transform: translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header-user__menu::before {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #fff;
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 10px;
+}
+
+.header-user:hover .header-user__menu {
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-user__menu a {
+  color: #115740;
+  border-bottom: 1px solid #eee;
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+.header-user__menu a:hover {
+  background-color: #ddd;
+  text-decoration: none;
 }
 
 .faq-section {
