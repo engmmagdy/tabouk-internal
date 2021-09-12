@@ -96,19 +96,21 @@
 }
 
 .logo {
-    padding-top: 1rem;
-    padding-bottom: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 
     figure {
         display: flex;
         align-items: center;
+        justify-content: center;
 
         figcaption {
             flex: 0 0 60%;
         }
 
         img {
-            max-width: 30%;
+            width: auto;
+            height: 75px;
         }
 
         h2,
@@ -130,26 +132,90 @@
     margin-#{$end}: 5px;
 }
 
-.top-menu--language{
+.top-menu--language {
     display: inline-flex;
     align-items: center;
     margin-#{$start}: 0.8rem;
 
-    span{
+    span {
         color: #fff;
     }
 
-    svg{
-        margin-#{$start}: 0.5rem ;
+    svg {
+        margin-#{$start}: 0.5rem;
         fill: #fff;
     }
 }
 
-.top-menu_buttons{
-    .btn.btn--bordered.rounded{
-        &:hover{
+.top-menu_buttons {
+    .btn.btn--bordered.rounded {
+        &:hover {
             background-color: #fff;
             color: #125541;
         }
     }
+}
+
+.header-user {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    padding: 5px 8px;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: .2s all ease-in-out;
+    }
+}
+
+.header-user:hover .header-user__menu {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.header-user__icon {
+    fill: #fff;
+    width: 22px;
+    height: 22px;
+}
+
+.header-user__text {
+    color: #fff;
+    margin: 0;
+    font-size: 14px;
+}
+
+.header-user__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 5px 0;
+    z-index: 1;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .03);
+    transition: .2s all ease-in-out;
+    transform: translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+
+    a {
+        color: #115740;
+        border-bottom: 1px solid #eee;
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+}
+
+.button--white,
+input[type].button--white,
+button.button--white {
+    background-color: #fff;
+    color: #000;
 }

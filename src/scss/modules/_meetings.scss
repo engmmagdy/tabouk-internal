@@ -1,0 +1,153 @@
+.main-card {
+    padding: 1rem;
+    position: relative;
+
+    &--title {
+        font-size: 1.2rem;
+        color: #646D82;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+}
+
+.meetings-list {
+    &--item {
+        display: inline-block;
+        width: 100%;
+        margin: .5rem 0;
+
+        &:nth-child(odd) {
+            background: #f7f7f7;
+        }
+    }
+
+    &--link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        text-align: right;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &--date {
+        background: rgb(37, 105, 82);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        flex: 0 1 auto;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        padding: .5rem;
+        border-radius: 10px;
+    }
+
+    &--name {
+        font-size: 1rem;
+        margin-#{$start}: 20px;
+        margin-#{$end}: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+}
+
+
+.meetings-main--title {
+    position: relative;
+
+    &::before {
+        content: "";
+        background: url(../images/calendar.svg) 0 center no-repeat;
+        width: 20px;
+        height: 20px;
+        background-size: 100%;
+        display: inline-block;
+    }
+
+}
+
+
+.article-details {
+    display: inline-block;
+    position: relative;
+    margin: 1rem 0;
+    padding: 0 1rem;
+
+    &--image {
+        width: auto;
+        height: 400px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+
+    &--info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    &--title {
+        font-size: 1rem;
+    }
+
+    &--location {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        color: #646D82 !important;
+        font-weight: normal;
+        display: flex;
+
+
+        &::before {
+            content: "";
+            background: url(../images/location.svg) 0 0 no-repeat;
+            width: 15px;
+            height: 30px;
+            display: inline-block;
+            margin-#{$end}: 10px;
+            background-size: 100%;
+        }
+    }
+
+    &--tag {
+        margin-#{$start}: 20px;
+    }
+
+    &--description {
+        font-size: .95rem;
+        line-height: 1.8;
+        color: #454952;
+        text-align: justify;
+    }
+
+    &--link {
+        margin: 1rem auto;
+        background: #115740;
+        color: #fff;
+        display: inline-block;
+        padding: .5rem 1rem;
+        min-width: 100px;
+        text-align: center;
+        border-radius: 20px;
+
+        &:hover{
+            text-decoration: none;
+            background-color: #454952;
+            transition: background-color .2s ease;
+            color: #fff;
+        }
+    }
+}
