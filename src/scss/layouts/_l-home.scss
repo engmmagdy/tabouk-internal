@@ -299,6 +299,36 @@ body {
 }
 
 
+.h-employee-section {
+    min-height: 567px;
+}
+
+
+.employee-gridview {
+    width: 100%;
+
+    th {
+        color: #125541;
+        font-size: 1rem;
+        font-weight: 500;
+        border-bottom: 1px solid rgba($color: #125541, $alpha: 0.3);
+        padding: 8px;
+    }
+
+    tbody {
+        tr {
+            &:nth-child(even) {
+                background-color: #F5F9F6;
+            }
+        }
+    }
+
+    td {
+        padding: 10px;
+        font-size: .9rem;
+        color: #646D82;
+    }
+}
 
 
 .heading__title {
@@ -307,7 +337,9 @@ body {
     // padding: 10px 20px 0;
     justify-content: start;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    margin-right: 0;
+    color: #646D82;
 
     h2 {
         margin: 0;
@@ -443,11 +475,10 @@ body {
         }
 
         .user__name {
-            font-size: 1.3rem;
+            font-size: 1rem;
             font-weight: 500;
             color: #fff;
             display: inline-flex;
-
         }
 
         .user__job,
@@ -815,8 +846,6 @@ body {
     margin: 0 auto;
 
     .service__item {
-
-
         a {
             display: inline-block;
             text-decoration: none;
@@ -905,8 +934,8 @@ body {
 .user__actions {
 
     .user__action-item {
-        flex: 0 0 25%;
-        max-width: 25%;
+        flex: 0 0 20%;
+        max-width: 20%;
         margin-bottom: 20px;
 
         &:before {
@@ -930,7 +959,7 @@ body {
             align-items: center;
 
             img {
-                width: 100%;
+                width: 80%;
 
 
             }
@@ -943,12 +972,12 @@ body {
 
             .card__title {
                 color: #444240;
-                font-size: 15px;
+                font-size: 14px;
                 line-height: 2;
             }
 
             .card__status {
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: bold;
                 color: #256952;
             }
@@ -961,20 +990,31 @@ body {
     margin-bottom: 20px;
 }
 
+.hidden {
+    display: none !important;
+}
+
 .favourit-services__content {
     display: flex;
     justify-content: start;
     align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 2em;
+    margin-top: 2rem;
 
     .service__item {
         display: flex;
-        flex: 0 0 calc(15% - 10px);
-        max-width: calc(15% - 10px);
+        flex: 0 0 auto;
+        width: 15%;
         text-align: center;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
         margin: 0 4px;
+        margin-bottom: 1rem;
+        background: #fafafa;
+        min-height: 150px;
+        border: 1px solid #ddd;
         @include transition();
 
         a {
@@ -1000,6 +1040,8 @@ body {
 
         &:hover {
             filter: drop-shadow(2px 4px 6px #777);
+            // filter: drop-shadow(2px 4px 6px #777);
+            transform: scale(1.03);
 
             a {
                 text-decoration: none;
@@ -1061,15 +1103,22 @@ body {
         font-size: 14px;
         margin-left: 10px;
         padding: 5px 10px;
-        border-radius: 4px
+        border-radius: 4px // width: 90px;
+            // font-size: 16px;
+            // margin-left: 10px;
+            // padding: .5rem;
     }
 
     a {
         h2 {
-            font-size: 14px;
+            font-size: 1rem;
             font-weight: normal;
             line-height: 1.5;
         }
+    }
+
+    &:nth-child(odd) {
+        background: #f7f7f7;
     }
 }
 
@@ -1098,4 +1147,166 @@ body {
         border: none;
         height: 100%;
     }
+}
+
+
+.twitter-section {
+    height: 337px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.polls {
+    margin-top: 1rem;
+
+    input[type=submit],
+    button {
+        background: #256952;
+        color: #fff;
+        font-size: 1rem;
+
+        &:hover {
+            opacity: .8;
+            background: #256952;
+        }
+    }
+}
+
+.polls-question {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #323232;
+}
+
+.poll_row {
+    margin-bottom: .7rem;
+
+    input[type=radio] {
+        width: 18px;
+        height: 18px
+    }
+}
+
+
+.main-menu {
+    margin-top: 1rem;
+
+    li.static {
+        display: block;
+        margin: 0;
+
+        a.static {
+            font-size: 1rem;
+            font-family: 'DroidKufi';
+            font-weight: normal;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            width: 100%;
+            align-items: center;
+
+            &::before {
+                content: "";
+                background-size: 100%;
+                width: 24px;
+                height: 24px;
+                display: inline-block;
+                margin-left: 10px;
+                filter: brightness(1) invert(1);
+            }
+
+            &[data-text="الرئيسية"] {
+                &::before {
+                    background: url(../images/dashboard.svg) 0 0 no-repeat;
+                }
+            }
+
+            &[data-text="الملف الشخصي"] {
+                &::before {
+                    background: url(../images/user.svg) 0 0 no-repeat;
+
+                }
+            }
+
+            &[data-text="بيانات الموظف"] {
+                &::before {
+                    background: url(../images/user.svg) 0 0 no-repeat;
+
+                }
+            }
+
+            &:hover {
+                background: #44826d;
+                color: #fff;
+            }
+
+            &.selected {
+                background: #F5F9F6;
+                color: #125541;
+
+                &:hover {
+                    background: #F5F9F6;
+                    color: #125541;
+                }
+
+                &::before {
+                    filter: brightness(1);
+                }
+            }
+
+
+
+
+        }
+    }
+
+    ul.root {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.ms-core-listMenu-horizontalBox {
+    width: 100%;
+}
+
+.search-filter {
+    margin-right: 30px;
+    position: relative;
+
+    &--btn {
+        position: absolute;
+        top: 10px;
+        left: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 18px;
+            height: 18px;
+            fill: #979797;
+        }
+    }
+}
+
+input.search-filter--input {
+    padding: 6px;
+    border: 1px solid #d2d3d5;
+    font-size: .95rem;
+
+    &::placeholder {
+        color: #868e96
+    }
+}
+
+h4.typo--primary.typo-body2 {
+    padding: .9rem;
+    font-size: 1rem;
+    background: #f2f2f2;
+    border-right: 4px solid #256952;
 }
