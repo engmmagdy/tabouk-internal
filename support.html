@@ -462,14 +462,17 @@
                                 </button>
                                 </div>
                       
-                            <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-new" role="tab" aria-controls="nav-new" aria-selected="true"> <i class="far fa-file-alt"></i>  جديده (2)</a>
-                                    <a class="nav-link" id="nav-still-tab" data-toggle="tab" href="#nav-still" role="tab" aria-controls="nav-still" aria-selected="false"> <i class="far fa-file-alt"></i> تحت الاجراء  (5)</a>
-                                    <a class="nav-link" id="nav-completed-tab" data-toggle="tab" href="#nav-completed" role="tab" aria-controls="nav-completed" aria-selected="false"> <i class="far fa-file-alt"></i> مكتمله  (3)</i></a>
-                                </div>
-                            </nav>
+                        
                                 <div class="tab-content" id="nav-tabContent">
+
+                                        <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <a class="nav-link active" id="nav-new-tab" data-toggle="tab" href="#nav-new" role="tab" aria-controls="nav-new" aria-selected="true"> <i class="far fa-file-alt"></i>  جديده (2)</a>
+                                                <a class="nav-link" id="nav-still-tab" data-toggle="tab" href="#nav-still" role="tab" aria-controls="nav-still" aria-selected="false"> <i class="far fa-file-alt"></i> تحت الاجراء  (5)</a>
+                                                <a class="nav-link" id="nav-completed-tab" data-toggle="tab" href="#nav-completed" role="tab" aria-controls="nav-completed" aria-selected="false"> <i class="far fa-file-alt"></i> مكتمله  (3)</i></a>
+                                            </div>
+                                        </nav>
+
                                 <div class="tab-pane fade show active" id="nav-new" role="tabpanel" aria-labelledby="nav-new-tab">
                                    
                                     <div class="filters">
@@ -488,7 +491,7 @@
 
                                     </div>
                                    
-                                    <div class="table-responsive">
+                                    <div class="table-responsive requests-table">
                                         <table class="table table-striped">
                                             <thead>
                                                 <tr>
@@ -636,8 +639,268 @@
                                         </div>
 
                                 </div>
-                                <div class="tab-pane fade" id="nav-still" role="tabpanel" aria-labelledby="nav-still-tab">still</div>
-                                <div class="tab-pane fade" id="nav-completed" role="tabpanel" aria-labelledby="nav-completed-tab">completed</div>
+                                <div class="tab-pane fade" id="nav-still" role="tabpanel" aria-labelledby="nav-still-tab">
+                                                     <div class="filters">
+
+
+                                        <form action="" method="">
+                                            <label>اظهر</label>
+                                            <input type="text" class="form-con-sm">
+                                        </form>
+
+                                        <form action="" method="">
+                                            <label>البحث</label>
+                                            <input type="text" class="form-con">
+                                        </form>
+
+
+                                    </div>
+                                   
+                                    <div class="table-responsive requests-table">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">م</th>
+                                                <th scope="col">رقم الطلب</th>
+                                                <th scope="col">التصنيف</th>
+                                                <th scope="col">الخدمه</th>
+                                                <th scope="col">تفاصيل الطلب</th>
+                                                <th scope="col"> حذف</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                <th>1</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>2</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>3</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>4</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                            </table>
+                                            <nav class="nav-pagination" aria-label="Page navigation example">
+                                               
+                                                 <span>اظهار 1 الي 5 من اصل 17 مدخل</span>
+
+                                               
+                                                <ul class="pagination">
+                                                    <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                    
+                                                    <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                    </li>
+                                                </ul>
+
+
+                                            </nav>
+                                        </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="nav-completed" role="tabpanel" aria-labelledby="nav-completed-tab">
+                                                     <div class="filters">
+
+
+                                        <form action="" method="">
+                                            <label>اظهر</label>
+                                            <input type="text" class="form-con-sm">
+                                        </form>
+
+                                        <form action="" method="">
+                                            <label>البحث</label>
+                                            <input type="text" class="form-con">
+                                        </form>
+
+
+                                    </div>
+                                   
+                                    <div class="table-responsive requests-table">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">م</th>
+                                                <th scope="col">رقم الطلب</th>
+                                                <th scope="col">التصنيف</th>
+                                                <th scope="col">الخدمه</th>
+                                                <th scope="col">تفاصيل الطلب</th>
+                                                <th scope="col"> حذف</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                <th>1</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>2</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>3</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>4</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                  
+                                           
+                                         
+
+                                            </tbody>
+                                            </table>
+                                            <nav class="nav-pagination" aria-label="Page navigation example">
+                                               
+                                                 <span>اظهار 1 الي 5 من اصل 17 مدخل</span>
+
+                                               
+                                                <ul class="pagination">
+                                                    <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                    
+                                                    <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                    </li>
+                                                </ul>
+
+
+                                            </nav>
+                                        </div>
+
+                                </div>
                                 </div>
          
                          </div>
@@ -647,20 +910,19 @@
                                 <span class="head-title">اداره الطلبات</span>
                                 
                                 </div>
-                             
-                      
-                            <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <a class="nav-link active" id="nav-new2-tab" data-toggle="tab" href="#nav-new2" role="tab" aria-controls="nav-new2" aria-selected="true"><i class="far fa-file-alt"></i>  جديده (2)</a>
-                                    <a class="nav-link" id="nav-still2-tab" data-toggle="tab" href="#nav-still2" role="tab" aria-controls="nav-still2" aria-selected="false"> <i class="far fa-file-alt"></i> تحت الاجراء (3)</a>
-                                    <a class="nav-link" id="nav-completed2-tab" data-toggle="tab" href="#nav-completed2" role="tab" aria-controls="nav-complete2" aria-selected="false"> <i class="far fa-file-alt"></i> مكتمله (4)</a>
-                                    <a class="nav-link" id="nav-late2-tab" data-toggle="tab" href="#nav-late2" role="tab" aria-controls="nav-late2" aria-selected="false"> <i class="far fa-file-alt"></i> متأخره (5)</a>
-                                </div>
-                            </nav>
+                    
                                 <div class="tab-content" id="nav-tabContent">
+                                           <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <a class="nav-link active" id="nav-new2-tab" data-toggle="tab" href="#nav-new2" role="tab" aria-controls="nav-new2" aria-selected="true"><i class="far fa-file-alt"></i>  جديده (2)</a>
+                                                <a class="nav-link" id="nav-still2-tab" data-toggle="tab" href="#nav-still2" role="tab" aria-controls="nav-still2" aria-selected="false"> <i class="far fa-file-alt"></i> تحت الاجراء (3)</a>
+                                                <a class="nav-link" id="nav-completed2-tab" data-toggle="tab" href="#nav-completed2" role="tab" aria-controls="nav-complete2" aria-selected="false"> <i class="far fa-file-alt"></i> مكتمله (4)</a>
+                                                <a class="nav-link" id="nav-late2-tab" data-toggle="tab" href="#nav-late2" role="tab" aria-controls="nav-late2" aria-selected="false"> <i class="far fa-file-alt"></i> متأخره (5)</a>
+                                            </div>
+                                        </nav>
                                 <div class="tab-pane fade show active" id="nav-new2" role="tabpanel" aria-labelledby="nav-new2-tab">
 
-
+                         
 
                                     
                                     <div class="filters">
@@ -679,7 +941,7 @@
 
                                     </div>
                                    
-                                    <div class="table-responsive">
+                                    <div class="table-responsive manage-requests-table">
                                         <table class="table table-striped">
                                             <thead>
                                                 <tr>
@@ -828,9 +1090,507 @@
 
 
                                 </div>
-                                <div class="tab-pane fade" id="nav-still2" role="tabpanel" aria-labelledby="nav-still2-tab">still2</div>
-                                <div class="tab-pane fade" id="nav-completed2" role="tabpanel" aria-labelledby="nav-completed2-tab">completed2</div>
-                                <div class="tab-pane fade" id="nav-late2" role="tabpanel" aria-labelledby="nav-late2-tab">late2</div>
+                                <div class="tab-pane fade" id="nav-still2" role="tabpanel" aria-labelledby="nav-still2-tab">
+                                                                        
+                                    <div class="filters">
+
+
+                                        <form action="" method="">
+                                            <label>اظهر</label>
+                                            <input type="text" class="form-con-sm">
+                                        </form>
+
+                                        <form action="" method="">
+                                            <label>البحث</label>
+                                            <input type="text" class="form-con">
+                                        </form>
+
+
+                                    </div>
+                                   
+                                    <div class="table-responsive manage-requests-table">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">م</th>
+                                                <th scope="col">رقم الطلب</th>
+                                                <th scope="col">التصنيف</th>
+                                                <th scope="col">الخدمه</th>
+                                                <th scope="col">تفاصيل الطلب</th>
+                                                <th scope="col"> حذف</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                <th>1</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>2</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>3</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>4</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>5</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                           
+                                                 <tr>
+                                                <th>6</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                            </table>
+                                            <nav class="nav-pagination" aria-label="Page navigation example">
+                                               
+                                                 <span>اظهار 1 الي 5 من اصل 17 مدخل</span>
+
+                                               
+                                                <ul class="pagination">
+                                                    <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                                    <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                    </li>
+                                                </ul>
+
+
+                                            </nav>
+                                        </div>
+
+
+                                </div>
+                                <div class="tab-pane fade" id="nav-completed2" role="tabpanel" aria-labelledby="nav-completed2-tab">
+                                                                        
+                                    <div class="filters">
+
+
+                                        <form action="" method="">
+                                            <label>اظهر</label>
+                                            <input type="text" class="form-con-sm">
+                                        </form>
+
+                                        <form action="" method="">
+                                            <label>البحث</label>
+                                            <input type="text" class="form-con">
+                                        </form>
+
+
+                                    </div>
+                                   
+                                    <div class="table-responsive manage-requests-table">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">م</th>
+                                                <th scope="col">رقم الطلب</th>
+                                                <th scope="col">التصنيف</th>
+                                                <th scope="col">الخدمه</th>
+                                                <th scope="col">تفاصيل الطلب</th>
+                                                <th scope="col"> حذف</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                <th>1</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>2</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>3</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>4</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>5</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                           
+                                                 <tr>
+                                                <th>6</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                            </table>
+                                            <nav class="nav-pagination" aria-label="Page navigation example">
+                                               
+                                                 <span>اظهار 1 الي 5 من اصل 17 مدخل</span>
+
+                                               
+                                                <ul class="pagination">
+                                                    <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                                    <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                    </li>
+                                                </ul>
+
+
+                                            </nav>
+                                        </div>
+
+
+                                </div>
+                                <div class="tab-pane fade" id="nav-late2" role="tabpanel" aria-labelledby="nav-late2-tab">
+                                                                        
+                                    <div class="filters">
+
+
+                                        <form action="" method="">
+                                            <label>اظهر</label>
+                                            <input type="text" class="form-con-sm">
+                                        </form>
+
+                                        <form action="" method="">
+                                            <label>البحث</label>
+                                            <input type="text" class="form-con">
+                                        </form>
+
+
+                                    </div>
+                                   
+                                    <div class="table-responsive manage-requests-table">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">م</th>
+                                                <th scope="col">رقم الطلب</th>
+                                                <th scope="col">التصنيف</th>
+                                                <th scope="col">الخدمه</th>
+                                                <th scope="col">تفاصيل الطلب</th>
+                                                <th scope="col"> حذف</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                <th>1</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>2</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>3</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>4</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                <th>5</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                           
+                                                 <tr>
+                                                <th>6</th>
+                                                    <td>12455</td>
+                                                    <td>التصنيف</td>
+                                                    <td>الخدمه</td>
+                                                    <td> 
+                                                        <a href="#">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td> 
+                                                      <a href="#">
+                                                          <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                            </table>
+                                            <nav class="nav-pagination" aria-label="Page navigation example">
+                                               
+                                                 <span>اظهار 1 الي 5 من اصل 17 مدخل</span>
+
+                                               
+                                                <ul class="pagination">
+                                                    <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                                    <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                    </li>
+                                                </ul>
+
+
+                                            </nav>
+                                        </div>
+
+
+                                </div>
                                 </div>
          
                         </div>
@@ -876,15 +1636,364 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form class="main-form" method="" action="">
-               
+                <form id="main-form" method="" action="">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label> مقدم الطلب </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="row">
+                                            <div class="col-sm-6 d-flex justify-content-center align-items-start">
+                                                 <input style="width: unset;" type="radio" value="0" name="status" class="form-control mt-1 ml-1 "> 
+                                                 <span > الموظف الحالي</span>
+                                            </div>
+                                            <div class="col-sm-6 d-flex justify-content-center align-items-start">
+                                                 <input style="width: unset;" type="radio" value="1" name="status" class="form-control mt-1 ml-1 ">
+                                                 <span> الموظف الاخر </span>  
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label> الرقم الوظيفي </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="row">
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-sm-4">
+                                             <button type="submit" class="mybutton"> بحث </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                         
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label> اسم الموطف </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                                     
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label> الجهه </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label> نوع الطلب </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <select name="" class="form-control">
+                                            <option value="0">طلب بوابه سهل</option>    
+                                            <option value="0">طلب بوابه سهل</option>    
+                                            <option value="0">طلب بوابه سهل</option>    
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label> الفرض من الطلب </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <select name="" class="form-control">
+                                            <option value="0">طلب بوابه سهل</option>    
+                                            <option value="0">طلب بوابه سهل</option>    
+                                            <option value="0">طلب بوابه سهل</option>    
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      <button id="extendButton" type="button" class="mybutton"> انشاء </button>
+
+
+                    </div>
+                 </form>
+
+
+                 <form id="extendedForm" action="" method="">
+                                      <hr>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 1 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 1 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                         
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 2 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 2 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 1 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 1 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 1 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 1 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 1 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 1 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 1 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 1 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 1 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label>حقل 1 </label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-1">
+                                        <label> الملاحظات </label>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <textarea rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="group">
+                                <div class="row">
+                                    <div class="col-sm-1">
+                                        <label> المرفقات </label>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <!-- <textarea rows="5" class="form-control"></textarea> -->
+                                        <div class="file-upload">
+                                            <div class="image-upload-wrap">
+                                                <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                                                <div class="drag-text">
+                                                <h3>Drag and drop a file or select add Image</h3>
+                                                </div>
+                                            </div>
+                                            <div class="file-upload-content">
+                                                <img class="file-upload-image" src="#" alt="your image" />
+                                                <div class="image-title-wrap">
+                                                <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div style="border-top:none;" class="modal-footer">
+                      <button type="button" class="mybutton">ارسال الطلب </button>
+                     </div>
+
+                    </div>
                  </form>
                 
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary">ارسال الطلب </button>
-            </div>
+       
             </div>
         </div>
         </div>
@@ -911,8 +2020,66 @@
     <script src="./src/scripts/progress.min.js"></script>
     <script src="./src/scripts/scripts.js"></script>
     <script>
+
+
+        // show extended form
+        let extendBtn = document.getElementById("extendButton");
+        let extendedForm = document.getElementById("extendedForm");
+
+        extendBtn.addEventListener("click", () => {
+        console.log("clicked");
+          extendedForm.style.cssText = "display: block ";
+        });
+
+   
+
+
       $(function () {
         $('[data-toggle="tooltip"]').tooltip();
+
+
+        $('#exampleModal').on('hidden.bs.modal', function (event) {
+            extendedForm.style.cssText = "display: none";
+        });
+
+
+
+        // drag && drop file
+
+       function readURL(input) {
+            if (input.files && input.files[0]) {
+
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                $('.image-upload-wrap').hide();
+
+                $('.file-upload-image').attr('src', e.target.result);
+                $('.file-upload-content').show();
+
+                $('.image-title').html(input.files[0].name);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+
+            } else {
+                removeUpload();
+            }
+            }
+
+            function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+            }
+            $('.image-upload-wrap').bind('dragover', function () {
+                    $('.image-upload-wrap').addClass('image-dropping');
+                });
+                $('.image-upload-wrap').bind('dragleave', function () {
+                    $('.image-upload-wrap').removeClass('image-dropping');
+            });
+
+
       });
     </script>
   </body>

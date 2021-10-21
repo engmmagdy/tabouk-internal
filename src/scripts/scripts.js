@@ -104,7 +104,7 @@ var bar2 = new ProgressBar.SemiCircle("#askProgress", {
 
 bar2.animate(0.8); // Number from 0.0 to 1.0
 
-var triggerTabList = [].slice.call(document.querySelectorAll("#pills-tab a"));
+var triggerTabList = [].slice.call(document.querySelectorAll("#nav-tab a"));
 triggerTabList.forEach(function (triggerEl) {
   var tabTrigger = new bootstrap.Tab(triggerEl);
 
