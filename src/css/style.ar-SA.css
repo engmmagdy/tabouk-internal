@@ -26995,7 +26995,7 @@ body {
   margin: 0 4px;
   margin-bottom: 1rem;
   background: #fafafa;
-  min-height: 150px;
+  min-height: 180px;
   border: 1px solid #ddd;
   transition: all 0.2s ease-in-out;
 }
@@ -27021,8 +27021,7 @@ body {
 }
 
 .favourit-services__content .service__item:hover {
-  filter: drop-shadow(2px 4px 6px #777);
-  transform: scale(1.03);
+  filter: drop-shadow(2px 4px 6px #ccc);
 }
 
 .favourit-services__content .service__item:hover a {
