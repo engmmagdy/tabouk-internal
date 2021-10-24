@@ -34466,7 +34466,7 @@ input[type="checkbox"] {
 }
 
 .support-container {
-  margin: 50px 20px;
+  margin: 55px 15px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -34857,6 +34857,178 @@ input[type="checkbox"] {
 .remove-image:active {
   border: 0;
   transition: all 0.2s ease;
+}
+
+.request-details {
+  background-color: #fff;
+  padding: 5px;
+  margin: 55px 15px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.request-details .nav-parent {
+  position: absolute;
+  top: -30px;
+  right: -40px;
+  border-bottom: none;
+}
+
+.request-details .nav-parent .nav-link {
+  border: 1px solid transparent;
+  background-color: #e4e0e0d0;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 5px;
+  margin-left: 12px;
+  border-top-right-radius: 5px;
+  width: 155px;
+  text-align: center;
+}
+
+.request-details .nav-parent .nav-link.active {
+  color: #444240 !important;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px -3px 2px 0px #d5d5d51a;
+  border-color: transparent;
+}
+
+.request-details .nav-parent .show > .nav-link {
+  color: #444240 !important;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px -3px 2px 0px #d5d5d51a;
+  border-color: transparent;
+}
+
+.request-details .title {
+  color: #555;
+  margin: 35px 18px 0px 18px;
+}
+
+.request-details .customer-info {
+  margin: 20px 0px;
+  padding: 10px 20px;
+}
+
+.request-details .customer-info .sub-title {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.request-details .customer-info .customer-info--item {
+  margin-bottom: 15px;
+}
+
+.request-details .customer-info .customer-info--item label {
+  color: #256952;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.request-details .customer-info .customer-info--item input {
+  background: #e6e6e6 0% 0% no-repeat padding-box;
+  border: 0.25px solid #737373;
+  border-radius: 12px;
+}
+
+.request-details .request-info,
+.request-details .request-confirm {
+  margin: 20px 0px;
+  padding: 10px 20px;
+}
+
+.request-details .request-info .title,
+.request-details .request-confirm .title {
+  color: #555;
+  margin: 35px 18px 0px 18px;
+}
+
+.request-details .request-info .sub-title,
+.request-details .request-confirm .sub-title {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.request-details .request-info .customer-info--item,
+.request-details .request-confirm .customer-info--item {
+  margin-bottom: 15px;
+}
+
+.request-details .request-info .customer-info--item .images a,
+.request-details .request-confirm .customer-info--item .images a {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  margin: 10px 2px;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.request-details .request-info .customer-info--item .images a img,
+.request-details .request-confirm .customer-info--item .images a img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.request-details .request-info .customer-info--item .images a img:hover,
+.request-details .request-confirm .customer-info--item .images a img:hover {
+  transform: scale(1.1);
+}
+
+.request-details .request-info .customer-info--item label,
+.request-details .request-confirm .customer-info--item label {
+  color: #256952;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.request-details .request-info .customer-info--item input,
+.request-details .request-info .customer-info--item textarea,
+.request-details .request-confirm .customer-info--item input,
+.request-details .request-confirm .customer-info--item textarea {
+  background: #e6e6e6 0% 0% no-repeat padding-box;
+  border: 0.25px solid #737373;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.request-details .request-info2 {
+  margin: 20px 0px;
+  padding: 10px 20px;
+}
+
+.request-details .request-info2 .title {
+  color: #555;
+  margin: 35px 18px 0px 18px;
+}
+
+.request-details .request-info2 table th {
+  border-bottom: none;
+}
+
+.request-details .request-info2 table thead {
+  background-color: #256952;
+  color: #fff;
+  text-align: right;
+}
+
+.request-details .request-info2 table td {
+  text-align: right;
+  font-size: 11px;
+}
+
+.request-details .request-info2 table td .fa-eye {
+  color: #256952;
+}
+
+.request-details .request-info2 table td .fa-trash-alt {
+  color: #f46363;
 }
 
 /*# sourceMappingURL=maps/style.ar-SA.css.map */
