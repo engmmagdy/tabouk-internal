@@ -26139,6 +26139,15 @@ button.btn--default.btn {
   color: #fff;
 }
 
+.button.btn--danger, .btn--danger.btn, .is-displayMode .button-icon-wrapper a.btn--danger, .is-displayMode .button-sp-wrapper a.btn--danger, .button_pdf--link a.btn--danger,
+input[type].button.btn--danger,
+input.btn[type].btn--danger,
+button.button.btn--danger,
+button.btn--danger.btn {
+  background: #dc3545;
+  color: #fff;
+}
+
 .button--raised, .btn,
 input[type].button--raised,
 input.btn[type],
@@ -27762,7 +27771,7 @@ body {
   margin: 0 4px;
   margin-bottom: 1rem;
   background: #fafafa;
-  min-height: 150px;
+  min-height: 180px;
   border: 1px solid #ddd;
   transition: all 0.2s ease-in-out;
 }
@@ -27788,8 +27797,7 @@ body {
 }
 
 .favourit-services__content .service__item:hover {
-  filter: drop-shadow(2px 4px 6px #777);
-  transform: scale(1.03);
+  filter: drop-shadow(2px 4px 6px #ccc);
 }
 
 .favourit-services__content .service__item:hover a {

@@ -1013,7 +1013,7 @@ body {
         margin: 0 4px;
         margin-bottom: 1rem;
         background: #fafafa;
-        min-height: 150px;
+        min-height: 180px;
         border: 1px solid #ddd;
         @include transition();
 
@@ -1039,9 +1039,9 @@ body {
         }
 
         &:hover {
-            filter: drop-shadow(2px 4px 6px #777);
+            filter: drop-shadow(2px 4px 6px #ccc);
             // filter: drop-shadow(2px 4px 6px #777);
-            transform: scale(1.03);
+            // transform: scale(1.03);
 
             a {
                 text-decoration: none;
