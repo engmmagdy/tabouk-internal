@@ -16800,6 +16800,7 @@ _LocalBinding */
   margin-bottom: 0px;
   padding-top: 19px;
   padding-bottom: 8px;
+  display: none !important;
 }
 
 #contentRow {
@@ -26379,10 +26380,6 @@ body {
   color: #fff;
 }
 
-.h-employee-section {
-  min-height: 567px;
-}
-
 .employee-gridview {
   width: 100%;
 }
@@ -26413,6 +26410,10 @@ body {
   margin-bottom: 2rem;
   margin-right: 0;
   color: #646D82;
+}
+
+.heading__title #icon-star {
+  display: none;
 }
 
 .heading__title h2 {
@@ -26999,13 +27000,14 @@ body {
   width: 15%;
   text-align: center;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   cursor: pointer;
   margin: 0 4px;
   margin-bottom: 1rem;
   background: #fafafa;
-  min-height: 180px;
+  min-height: 177px;
   border: 1px solid #ddd;
+  padding-top: 5px;
   transition: all 0.2s ease-in-out;
 }
 
@@ -27042,18 +27044,18 @@ body {
 }
 
 .service__item.empty__item {
-  flex: 0 0 10%;
-  max-width: 10%;
+  padding-top: 15px;
 }
 
 .service__item.empty__item > a svg {
   background: #E1E1E1;
   border-radius: 50%;
   text-decoration: none;
-  width: 95px;
-  height: 95px;
+  width: 75px;
+  height: 75px;
   fill: #999;
   padding: 10px;
+  margin-bottom: 15px;
 }
 
 .service__item.empty__item > a:hover svg {
@@ -27072,7 +27074,7 @@ body {
   background: #125541;
   color: #fff;
   text-align: center;
-  width: 50%;
+  width: 90px;
   font-size: 14px;
   margin-left: 10px;
   padding: 5px 10px;
@@ -27197,7 +27199,7 @@ body {
 }
 
 .main-menu li.static a.static[data-text="بيانات الموظف"]::before {
-  background: url(../images/user.svg) 0 0 no-repeat;
+  background: url(../images/data.svg) 0 0 no-repeat;
 }
 
 .main-menu li.static a.static:hover {
@@ -27263,6 +27265,15 @@ h4.typo--primary.typo-body2 {
   font-size: 1rem;
   background: #f2f2f2;
   border-right: 4px solid #256952;
+}
+
+.Zone-8 .card {
+  height: 427px;
+}
+
+.Zone-8 .card .meetings-list {
+  height: 100%;
+  justify-content: space-between;
 }
 
 .page__header {
