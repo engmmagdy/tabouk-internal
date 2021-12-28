@@ -231,6 +231,39 @@
   }
 
   .modal-body {
+    #closed {
+      background-color: $color-warning;
+      width: 90px;
+      display: inline-block;
+      height: 30px;
+      color: #fff;
+      text-align: center;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    #canceled {
+      background-color: crimson;
+      width: 90px;
+      display: inline-block;
+      height: 30px;
+      color: #fff;
+      text-align: center;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    #inprogress {
+      background-color: $color-primary;
+      width: 90px;
+      display: inline-block;
+      height: 30px;
+      color: #fff;
+      text-align: center;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
     textarea,
     input,
     select {
@@ -372,4 +405,12 @@
 .remove-image:active {
   border: 0;
   transition: all 0.2s ease;
+}
+
+.table td {
+  text-align: center;
+}
+
+.table thead th {
+  text-align: center;
 }
